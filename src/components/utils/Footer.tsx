@@ -23,7 +23,7 @@ function Footer() {
 
   return (
     <>
-      <div className="footer-outer-div">
+      <div className="footer-outer-div" id="footer">
         <div className="footer-logo-box">
           <GplanIconWhite />
           <p className="footer-logo-text">GPLAN</p>
@@ -31,9 +31,45 @@ function Footer() {
         <Box sx={{ display: { xs: "none", sm: "block" }, marginTop: "64px" }}>
           <p className="footer-heading">CREATE SOMETHING NEW TODAY!</p>
         </Box>
+        <Box sx={{ display: { xs: "none", sm: "block" }, marginTop: "16px" }}>
+          <p
+            className="footer-heading"
+            style={{ fontSize: "20px", fontFamily: "Poppins" }}
+          >
+            Meet your deadlines and take on extra projects. <br />
+            Email us your design brief, and GPLAN will handle your floor plans.
+          </p>
+        </Box>
+        <Box sx={{ display: { xs: "none", sm: "block" }, marginTop: "16px" }}>
+          <p
+            className="footer-heading"
+            style={{ fontSize: "20px", fontFamily: "Poppins" }}
+          >
+            Or enter your email below <br /> and the GPLAN team will get back to
+            you :
+          </p>
+        </Box>
         <Box sx={{ display: { xs: "block", sm: "none" }, marginTop: "32px" }}>
           <p className="footer-heading" style={{ fontSize: "36px" }}>
             CREATE SOMETHING NEW TODAY!
+          </p>
+        </Box>
+        <Box sx={{ display: { xs: "block", sm: "none" }, marginTop: "8px" }}>
+          <p
+            className="footer-heading"
+            style={{ fontSize: "10px", fontFamily: "Poppins" }}
+          >
+            Meet your deadlines and take on extra projects. <br />
+            Email us your design brief, and GPLAN will handle your floor plans.
+          </p>
+        </Box>
+        <Box sx={{ display: { xs: "block", sm: "none" }, marginTop: "8px" }}>
+          <p
+            className="footer-heading"
+            style={{ fontSize: "10px", fontFamily: "Poppins" }}
+          >
+            Or enter your email below <br /> and the GPLAN team will get back to
+            you :
           </p>
         </Box>
         <Box
@@ -84,9 +120,6 @@ function Footer() {
           <Link href="#" style={{ textDecoration: "none" }}>
             <p className="footer-social-links">LinkedIn</p>
           </Link>
-          <Link href="#" style={{ textDecoration: "none" }}>
-            <p className="footer-social-links">Contact Us</p>
-          </Link>
         </Box>
         <Box
           className="footer-bottom-social-link-div"
@@ -105,11 +138,6 @@ function Footer() {
           <Link href="#" style={{ textDecoration: "none" }}>
             <p className="footer-social-links" style={{ fontSize: "10px" }}>
               LinkedIn
-            </p>
-          </Link>
-          <Link href="#" style={{ textDecoration: "none" }}>
-            <p className="footer-social-links" style={{ fontSize: "10px" }}>
-              Contact Us
             </p>
           </Link>
         </Box>
