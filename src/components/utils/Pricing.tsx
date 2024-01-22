@@ -126,7 +126,7 @@ const Pricing = () => {
           <Grid item xs={12} sm={3}>
             <PricingCard
               type="enterprise"
-              heading="Enterprise plan"
+              heading="Enterprise Plan"
               price="Custom"
               features={[
                 "Unlimited nodes/rooms",
