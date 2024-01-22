@@ -81,6 +81,7 @@ const Pricing = () => {
         <Grid container spacing={3}>
           <Grid item xs={12} sm={3}>
             <PricingCard
+            key={0}
               type="free"
               heading="Free Trial"
               price="Free"
@@ -96,6 +97,7 @@ const Pricing = () => {
           </Grid>
           <Grid item xs={12} sm={3}>
             <PricingCard
+            key={1}
               type="basic"
               heading="Basic Plan"
               price="$35/mth"
@@ -111,6 +113,7 @@ const Pricing = () => {
           </Grid>
           <Grid item xs={12} sm={3}>
             <PricingCard
+            key={2}
               type="pro"
               heading="Pro Plan"
               price="$75/mth"
@@ -125,6 +128,7 @@ const Pricing = () => {
           </Grid>
           <Grid item xs={12} sm={3}>
             <PricingCard
+            key={3}
               type="enterprise"
               heading="Enterprise Plan"
               price="Custom"
