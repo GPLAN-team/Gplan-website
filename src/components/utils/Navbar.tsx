@@ -33,7 +33,13 @@ function Navbar() {
       </div>
       <div style={{ paddingBottom: "24px" }}>
         <p className="DrawerButtons">Home</p>
-        <p className="DrawerButtons">Features</p>
+        <a
+          className="DrawerButtons"
+          href="#features-section"
+          onClick={handleDrawerToggle}
+        >
+          Features
+        </a>
         <p className="DrawerButtons">Quickstart Guides</p>
         <p className="DrawerButtons">About Us</p>
         <a
@@ -63,7 +69,9 @@ function Navbar() {
               }}
             >
               <p className="NavButtons">Home</p>
-              <p className="NavButtons">Features</p>
+              <a className="NavButtons" href="#features-section">
+                Features
+              </a>
               <p className="NavButtons">Quickstart Guides</p>
               <p className="NavButtons">About Us</p>
               <a className="NavButtons" href="#footer">

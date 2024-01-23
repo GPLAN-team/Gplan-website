@@ -5,7 +5,7 @@ import FeatureSVG from "../../public/features.svg";
 const Features = () => {
   return (
     <>
-      <p className="pricing-main-heading" style={{ marginTop: "64px" }}>
+      <p className="pricing-main-heading" style={{ marginTop: "64px" }} id="features-section">
         Features
       </p>
       <Grid
