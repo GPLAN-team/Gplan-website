@@ -97,13 +97,61 @@ export default function AboutUs() {
       <Grid
         spacing={5}
         sx={{
+          backgroundColor: "#1C4C82",
+          pl: "7%",
+          pr: "7%",
+          pb: "32px",
+          pt: "32px",
+          mb: "15px",
+          mt: "100px",
+          height: "50vh"
+        }}
+      >
+        <Box sx={{
+          display: 'flex',
+          height: "100%",
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexDirection: 'column'
+        }}>
+          <Typography
+            sx={{
+              textAlign: "center",
+              fontFamily: "Bebas Neue",
+              fontSize: { xs: "36px", sm: "56px" },
+              fontStyle: "normal",
+              fontWeight: 400,
+              lineHeight: "normal",
+              marginBottom: "4px",
+            }}
+          >
+            <Box sx={{ color: "white", marginRight: "10px" }}>Our Mission</Box>
+          </Typography>
+          <Typography
+            sx={{
+              textAlign: "center",
+              fontFamily: "Bebas Neue",
+              fontSize: { xs: "30px", sm: "45px" },
+              fontStyle: "normal",
+              fontWeight: 400,
+              lineHeight: "normal",
+              marginBottom: "20px",
+            }}
+          >
+            <Box sx={{ color: "#fff" }}>To elevate the landscape of architectural design</Box>
+          </Typography>
+        </Box>
+      </Grid>
+      <Grid
+        spacing={5}
+        sx={{
           backgroundColor: "#fff",
           pl: "7%",
           pr: "7%",
           pb: "32px",
           pt: "32px",
           mb: "36px",
-          mt: "100px",
+          mt: "36px",
         }}
       >
         <Typography
@@ -114,44 +162,6 @@ export default function AboutUs() {
             fontStyle: "normal",
             fontWeight: 400,
             lineHeight: "normal",
-            marginBottom: "4px",
-          }}
-        >
-          <Box sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-            <Box sx={{ color: "black", marginRight: "10px" }}>Our Mission</Box>
-          </Box>
-        </Typography>
-        <Typography
-          sx={{
-            textAlign: "left",
-            fontFamily: "Bebas Neue",
-            fontSize: { xs: "36px", sm: "56px" },
-            fontStyle: "normal",
-            fontWeight: 400,
-            lineHeight: "normal",
-            marginBottom: "20px",
-          }}
-        >
-          <Box sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-            <Box sx={{ color: "#1C4C82" }}>To elevate the landscape of architectural design</Box>
-          </Box>
-        </Typography>
-        <Typography
-          sx={{
-            textAlign: "left",
-            fontFamily: "Bebas Neue",
-            fontSize: { xs: "36px", sm: "56px" },
-            fontStyle: "normal",
-            fontWeight: 400,
-            lineHeight: "normal",
             marginBottom: "20px",
           }}
         >
@@ -164,10 +174,24 @@ export default function AboutUs() {
             fontStyle: "normal",
             fontWeight: 400,
             lineHeight: "normal",
-            marginBottom: "20px",
+            mr: "10px"
           }}
         >
-          GPLAN: A Game-Changing Approach To Revolutionize Architectural Design
+          GPLAN
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: "left",
+            fontFamily: "Bebas Neue",
+            color: "#828282",
+            fontSize: { xs: "25px", sm: "40px" },
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: "normal",
+            marginBottom: "5px",
+          }}
+        >
+          A Game-Changing Approach To Revolutionize Architectural Design
         </Typography>
         <Typography
           sx={{
@@ -272,7 +296,7 @@ export default function AboutUs() {
         >
           <Grid container>
             <Box sx={{ color: "black", marginRight: "4px" }}>Our</Box>
-            <Box sx={{ color: { xs: "#1C4C82", sm: "black" } }}>Story</Box>
+            <Box sx={{ color: "black" }}>Story</Box>
           </Grid>
         </Typography>
         <Typography
