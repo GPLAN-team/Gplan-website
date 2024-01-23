@@ -9,7 +9,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
-import loginBG from "../public/loginBG.png";
+import loginBG from "./../../public/loginBG.png";
 
 function LoginPage() {
   interface FormValues {
