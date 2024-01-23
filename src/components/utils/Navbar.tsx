@@ -32,11 +32,19 @@ function Navbar() {
           <CloseIcon sx={{ color: 'white' }}></CloseIcon>
         </IconButton>
       </div>
-      <div style={{ paddingBottom: '24px' }}>
-        <p className='DrawerButtons'>Home</p>
-        <p className='DrawerButtons'>Features</p>
-        <p className='DrawerButtons'>Quickstart Guides</p>
-        <p className='DrawerButtons'>About Us</p>
+
+      <div style={{ paddingBottom: "24px" }}>
+        <p className="DrawerButtons">Home</p>
+        <a
+          className="DrawerButtons"
+          href="#features-section"
+          onClick={handleDrawerToggle}
+        >
+          Features
+        </a>
+        <p className="DrawerButtons">Quickstart Guides</p>
+        <p className="DrawerButtons">About Us</p>
+
         <a
           className='DrawerButtons'
           href='#footer'
@@ -66,11 +74,14 @@ function Navbar() {
                 display: { xs: 'none', sm: 'flex' },
               }}
             >
+
               <Link to='/' className='linkNav'>
                 <p className='NavButtons'>Home</p>
               </Link>
 
-              <p className='NavButtons'>Features</p>
+              <a className="NavButtons" href="#features-section">
+                Features
+              </a>
 
               <Link to='/guide' className='linkNav'>
                 <p className='NavButtons'>Quickstart Guides</p>
@@ -80,6 +91,7 @@ function Navbar() {
               </Link>
 
               <a className='NavButtons' href='#footer'>
+
                 Contact Us
               </a>
 
