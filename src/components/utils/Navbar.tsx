@@ -64,7 +64,7 @@ function Navbar() {
                 display: { xs: "none", sm: "flex" }
               }}
             >
-              <Link to="/home" className="linkNav">
+              <Link to="/" className="linkNav">
                 <p className="NavButtons">Home</p>
               </Link>
               <Link to="/features" className="linkNav">

@@ -1,13 +1,94 @@
 import React from "react"
 import {
   Box,
-  Button,
   Grid,
   Typography,
 } from "@mui/material";
 import Navbar from "../utils/Navbar";
 import Footer from "../utils/Footer";
 import "../../styles/home.css"
+
+function TeamMemberCard({ name, text1, text2, text3, text4 }: any) {
+  return (
+    <Grid item xs={12} md={4}>
+      <Box
+        sx={{
+          backgroundColor: '#EAECF0',
+          borderRadius: '10px',
+          padding: '20px',
+          boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+          height: '300px',
+        }}
+      >
+        <Typography
+          sx={{
+            textAlign: 'left',
+            fontFamily: 'Montserrat',
+            fontSize: { xs: '24px', sm: '28px' },
+            fontStyle: 'normal',
+            fontWeight: 600,
+            lineHeight: '36px',
+            marginBottom: '20px',
+          }}
+        >
+          {name}
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: 'left',
+            fontFamily: 'Montserrat',
+            fontSize: { xs: '18px', sm: '22px' },
+            fontStyle: 'normal',
+            fontWeight: 500,
+            lineHeight: '36px',
+            marginBottom: '20px',
+          }}
+        >
+          {text1}
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: 'left',
+            fontFamily: 'Montserrat',
+            fontSize: { xs: '18px', sm: '22px' },
+            fontStyle: 'normal',
+            fontWeight: 500,
+            lineHeight: '36px',
+            marginBottom: '20px',
+          }}
+        >
+          {text2}
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: 'left',
+            fontFamily: 'Montserrat',
+            fontSize: { xs: '18px', sm: '22px' },
+            fontStyle: 'normal',
+            fontWeight: 500,
+            lineHeight: '36px',
+            marginBottom: '20px',
+          }}
+        >
+          {text3}
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: 'left',
+            fontFamily: 'Montserrat',
+            fontSize: { xs: '18px', sm: '22px' },
+            fontStyle: 'normal',
+            fontWeight: 500,
+            lineHeight: '36px',
+            marginBottom: '20px',
+          }}
+        >
+          {text4}
+        </Typography>
+      </Box>
+    </Grid>
+  );
+}
 
 export default function AboutUs() {
   return (
@@ -33,12 +114,16 @@ export default function AboutUs() {
             fontStyle: "normal",
             fontWeight: 400,
             lineHeight: "normal",
-            marginBottom: "20px",
+            marginBottom: "4px",
           }}
         >
-          <Grid container>
-            <Box sx={{ color: "black", marginRight: "4px" }}>Mission</Box>
-          </Grid>
+          <Box sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            <Box sx={{ color: "black", marginRight: "10px" }}>Our Mission</Box>
+          </Box>
         </Typography>
         <Typography
           sx={{
@@ -51,7 +136,25 @@ export default function AboutUs() {
             marginBottom: "20px",
           }}
         >
-          To elevate the landscape of architectural design.
+          <Box sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            <Box sx={{ color: "#1C4C82" }}>To elevate the landscape of architectural design</Box>
+          </Box>
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: "left",
+            fontFamily: "Bebas Neue",
+            fontSize: { xs: "36px", sm: "56px" },
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: "normal",
+            marginBottom: "20px",
+          }}
+        >
         </Typography>
         <Typography
           sx={{
@@ -104,117 +207,6 @@ export default function AboutUs() {
         >
           We aim to drive automation and spark innovation in floor planning for AEC professionals, transforming the way architectural projects are envisioned.
         </Typography>
-        {/* bullets  */}
-        {/* <Grid container spacing={2}>
-          <Grid item xs={12} md={6.9} sx={{ height: '100%' }}>
-            <Box
-              sx={{
-                borderRadius: '8px',
-              }}
-            >
-              <svg width="100%" height="auto" viewBox="0 0 910 792">
-                <rect width="100%" height="100%" fill="#DDDDDD" rx="8" ry="8" />
-              </svg>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={5.1}>
-            <Grid
-              container
-              alignContent="space-between"
-              style={{ height: '100%' }}
-            >
-              <Grid item xs={12}>
-                <Box
-                  sx={{
-                    background: '#F2F7FC',
-                    paddingTop: '20px',
-                    paddingBottom: '20px',
-                    paddingLeft: '20px',
-                    paddingRight: '20px',
-                    borderRadius: '8px',
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      color: "#4F4F4F",
-                      textAlign: "left",
-                      fontFamily: "Montserrat",
-                      fontSize: { xs: "16px", sm: "20px" },
-                      fontStyle: "normal",
-                      fontWeight: 500,
-                      lineHeight: "normal",
-                    }}
-                  >
-                    Born in the desert sands of BITS Pilani, India, GPLAN is the brainchild of Prof. Krishnendra Shekhawat, an esteemed mathematics professor, and his students.
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid item xs={12}>
-                <Grid sx={{ height: '100%' }} container spacing={2} >
-                  <Grid item xs={6}>
-                    <Box
-                      sx={{
-                        background: '#DDDDDD',
-                        paddingTop: '5px',
-                        paddingBottom: '5px',
-                        height: '200px',
-                        mt: { xs: '20px', sm: '0px' },
-                        mb: { xs: '0px', sm: '5px' },
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        borderRadius: '8px',
-                      }}
-                    >
-                      <Typography
-                        sx={{
-                          color: "black",
-                          textAlign: "center",
-                          fontFamily: "Inter",
-                          fontSize: { xs: "16px", sm: "20px" },
-                          fontStyle: "normal",
-                          fontWeight: 400,
-                          lineHeight: "normal",
-                        }}
-                      >
-                        Our Team
-                      </Typography>
-                    </Box>
-                  </Grid>
-                  <Grid item xs={6}>
-                    <Box
-                      sx={{
-                        background: '#DDDDDD',
-                        paddingTop: '5px',
-                        paddingBottom: '5px',
-                        height: '200px',
-                        mt: { xs: '20px', sm: '0px' },
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        borderRadius: '8px',
-                      }}
-                    >
-                      <Typography
-                        sx={{
-                          color: "black",
-                          textAlign: "center",
-                          fontFamily: "Inter",
-                          fontSize: { xs: "16px", sm: "20px" },
-                          fontStyle: "normal",
-                          fontWeight: 400,
-                          lineHeight: "normal",
-                        }}
-                      >
-                        What we are Up to
-                      </Typography>
-                    </Box>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid> */}
       </Grid>
       <Grid
         spacing={5}
@@ -224,7 +216,7 @@ export default function AboutUs() {
           pr: "7%",
           pb: "32px",
           mb: "36px",
-          mt: "100px",
+          mt: "36px",
         }}
       >
         <Typography
@@ -264,7 +256,7 @@ export default function AboutUs() {
           pr: "7%",
           pb: "32px",
           mb: "36px",
-          mt: "100px",
+          mt: "36px",
         }}
       >
         <Typography
@@ -316,7 +308,7 @@ export default function AboutUs() {
           pr: "7%",
           pb: "32px",
           mb: "36px",
-          mt: "100px",
+          mt: "36px",
         }}
       >
         <Typography
@@ -335,60 +327,14 @@ export default function AboutUs() {
             <Box sx={{ color: { xs: "#1C4C82", sm: "black" } }}>Team</Box>
           </Grid>
         </Typography>
-        <Box sx={{
-          display: "flex",
-        }}>
-          <Box>
-            <Typography
-              sx={{
-                textAlign: "left",
-                fontFamily: "Montserrat",
-                fontSize: { xs: "18px", sm: "22px" },
-                fontStyle: "normal",
-                fontWeight: 500,
-                lineHeight: "36px",
-                marginBottom: "20px",
-              }}>
-              Dr. Krishnendra Shekhawat
-            </Typography>
-            <Typography
-              sx={{
-                textAlign: "left",
-                fontFamily: "Montserrat",
-                fontSize: { xs: "18px", sm: "22px" },
-                fontStyle: "normal",
-                fontWeight: 500,
-                lineHeight: "36px",
-                marginBottom: "20px",
-              }}>
-              Founder @GPLAN
-            </Typography>
-            <Typography
-              sx={{
-                textAlign: "left",
-                fontFamily: "Montserrat",
-                fontSize: { xs: "18px", sm: "22px" },
-                fontStyle: "normal",
-                fontWeight: 500,
-                lineHeight: "36px",
-                marginBottom: "20px",
-              }}>
-              Professor @BITS Pilani
-            </Typography>
-            <Typography
-              sx={{
-                textAlign: "left",
-                fontFamily: "Montserrat",
-                fontSize: { xs: "18px", sm: "22px" },
-                fontStyle: "normal",
-                fontWeight: 500,
-                lineHeight: "36px",
-                marginBottom: "20px",
-              }}>
-              PhD Mathematics @University of Geneva
-            </Typography>
-          </Box>
-        </Box>
+        <Grid container spacing={4}>
+          <TeamMemberCard name="Dr. Krishnendra Shekhawat" text1="Founder @GPLAN" text2="Professor @BITS Pilani" text3="PhD Mathematics @University of Geneva" />
+          <TeamMemberCard name="Rahil N Jain" text1="Tech & Product Lead" text2="Associate @Goldman Sachs" text3="Ex - Amazon" text4="MSc. Mathematics and BE. Computer Science @BITS Pilani" />
+          <TeamMemberCard name="Ayush Agarwal" text1="Tech Lead" text2="Ex - Sprinklr" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
+          <TeamMemberCard name="Sujay Rastogi" text1="Tech Lead" text2="Ex - Amazon" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
+          <TeamMemberCard name="Bhavy Goel" text1="Tech Lead" text2="Ex - Moveworks" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
+          <TeamMemberCard name="Fahad Qureshi" text1="Strategy & Business Head" text2="PM @Swiggy" text3="Ex - GE HealthCare" text4="BE. Manufacturing @BITS Pilani" />
+        </Grid>
       </Grid>
       <Footer />
     </>
