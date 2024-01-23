@@ -1,4 +1,7 @@
 /* --NAVBAR STARTS-- */
+html {
+  scroll-behavior: smooth;
+}
 
 .NavMain {
   background: transparent;
@@ -53,6 +56,7 @@
   font-weight: 500;
   line-height: normal;
   margin-bottom: 24px;
+  text-decoration: none;
 }
 
 .NavButtons {
@@ -61,6 +65,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .NavButtons:hover {
@@ -300,7 +305,6 @@
   float: left;
 }
 
-
 .mac-mobile-upper-wave-image {
   position: absolute;
   top: 150px;
@@ -447,7 +451,7 @@
   background-color: #1c4c82;
   background-image: url("../public/bgL1.png"), url("../public/bgL1.png");
   background-repeat: no-repeat;
-  background-position: left center, 970px -300px;
+  background-position: -100px bottom, 1100px -350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -544,6 +548,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 30px; /* 150% */
+  white-space: nowrap;
 }
 
 .pricing-header-price {
@@ -556,7 +561,6 @@
   font-weight: 600;
   line-height: 60px; /* 125% */
   letter-spacing: -0.96px;
-  
 }
 
 .pricing-header-supporting-text {
@@ -620,6 +624,7 @@
   padding: 32px;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  overflow: hidden;
 }
 
 .pricing-footer-button {
@@ -633,7 +638,8 @@
   font-weight: 500;
   line-height: 24px; /* 150% */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-  padding: 12px 84px;
+  padding: 6% 32%;
+  white-space: nowrap;
 
   &:hover {
     cursor: pointer;
@@ -660,4 +666,34 @@
   margin: 0px;
 }
 
-/* --Footer Ends-- */
+/* --Pricing Ends-- */
+
+/* --Features Starts-- */
+
+.features-heading{
+  color: #1c4c82;
+  margin: 18px 0px 18px 0px;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+}
+
+.features-content {
+  color: #404040;
+  margin: 0px;
+  margin-bottom: 12px;
+  display: inline-block;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-align: center;
+}
+
+/* --Features Ends-- */

@@ -1,11 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import {
-  Box,
-  Toolbar,
-  IconButton,
-  SwipeableDrawer,
-} from "@mui/material";
+import { Box, Toolbar, IconButton, SwipeableDrawer } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import GplanIconWhite from "../icons/GplanIconWhite";
@@ -37,12 +32,18 @@ function Navbar() {
           <CloseIcon sx={{ color: "white" }}></CloseIcon>
         </IconButton>
       </div>
-      <div>
+      <div style={{ paddingBottom: "24px" }}>
         <p className="DrawerButtons">Home</p>
         <p className="DrawerButtons">Features</p>
         <p className="DrawerButtons">Quickstart Guides</p>
         <p className="DrawerButtons">About Us</p>
-        <p className="DrawerButtons">Contact Us</p>
+        <a
+          className="DrawerButtons"
+          href="#footer"
+          onClick={handleDrawerToggle}
+        >
+          Contact Us
+        </a>
       </div>
     </div>
   );
@@ -52,18 +53,21 @@ function Navbar() {
       <div>
         <nav className="NavMain">
           <Toolbar className="Toolbar" sx={{ margin: { sm: "0px 24px" } }}>
+
             <Link to="/" className="linkNav">
               <div className="LogoBox">
                 <GplanIconBlue />
                 <p className="NavLogoText">GPLAN</p>
               </div>
             </Link>
+
             <Box
               className="NavButtonBox"
               sx={{
-                display: { xs: "none", sm: "flex" }
+                display: { xs: "none", sm: "flex" },
               }}
             >
+
               <Link to="/" className="linkNav">
                 <p className="NavButtons">Home</p>
               </Link>
@@ -82,6 +86,7 @@ function Navbar() {
               <Link to="/login" className="linkNav">
                 <button className="NavLoginButton">Login</button>
               </Link>
+
             </Box>
             <IconButton
               aria-label="open drawer"
