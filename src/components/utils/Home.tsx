@@ -1,27 +1,27 @@
-import React from "react";
-import { Box, SvgIcon, Typography } from "@mui/material";
-import Navbar from "./Navbar";
-import Section1 from "./Section1";
-import Section2 from "./Section2";
-import Section3 from "./Section3";
-import Section4 from "./Section4";
-import HorizontalScroller from "./HorizontalScroller";
-import Footer from "./Footer";
-import SignUpPage from "../pages/SignUpPage";
-import LoginPage from "../pages/LoginPage";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "../pages/LandingPage";
-import AboutUs from "../pages/AboutUs";
+import React from 'react'
+import { Box, SvgIcon, Typography } from '@mui/material'
+import Navbar from './Navbar'
+import Section1 from './Section1'
+import Section2 from './Section2'
+import Section3 from './Section3'
+import Section4 from './Section4'
+import HorizontalScroller from './HorizontalScroller'
+import Footer from './Footer'
+import SignUpPage from '../pages/SignUpPage'
+import LoginPage from '../pages/LoginPage'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import LandingPage from '../pages/LandingPage'
+import AboutUs from '../pages/AboutUs'
 
 function Home() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignUpPage />} />
-          <Route path="/about-us" element={<AboutUs />} />
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/signup' element={<SignUpPage />} />
+          <Route path='/about-us' element={<AboutUs />} />
         </Routes>
       </Router>
       {/* <Navbar/>
@@ -152,7 +152,7 @@ function Home() {
       <Dropmenu />
        */}
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home
