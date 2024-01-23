@@ -16,14 +16,14 @@ import AboutUs from "../pages/AboutUs";
 function Home() {
   return (
     <>
-      {/* <Router>
-              <Routes>
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/signup" element={<SignUpPage />} />
-              </Routes>
-          </Router> */}
-      {/* <LandingPage /> */}
-      <AboutUs/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/about-us" element={<AboutUs />} />
+        </Routes>
+      </Router>
       {/* <Navbar/>
     <Section1/>
     <Box sx={{display:'flex', justifyContent:"center", my:'20px'}}><Typography variant="h3">Features</Typography></Box>

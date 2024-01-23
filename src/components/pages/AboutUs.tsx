@@ -6,6 +6,7 @@ import {
   Typography,
 } from "@mui/material";
 import Navbar from "../utils/Navbar";
+import Footer from "../utils/Footer";
 import "../../styles/home.css"
 
 export default function AboutUs() {
@@ -19,6 +20,7 @@ export default function AboutUs() {
           pl: "7%",
           pr: "7%",
           pb: "32px",
+          pt: "32px",
           mb: "36px",
           mt: "100px",
         }}
@@ -333,19 +335,62 @@ export default function AboutUs() {
             <Box sx={{ color: { xs: "#1C4C82", sm: "black" } }}>Team</Box>
           </Grid>
         </Typography>
-        <Typography
-          sx={{
-            textAlign: "left",
-            fontFamily: "Montserrat",
-            fontSize: { xs: "18px", sm: "22px" },
-            fontStyle: "normal",
-            fontWeight: 500,
-            lineHeight: "36px",
-            marginBottom: "20px",
-          }}>
-          With this vision, our founder, Prof. Shekhawat, with a group of his students, sat every week devising algorithms to incorporate an algorithm for every problem that architects might face while drawing out a floor plan, into GPLAN. Thus, #x# research papers and countless hours later, we propose GPLAN.
-        </Typography>
+        <Box sx={{
+          display: "flex",
+        }}>
+          <Box>
+            <Typography
+              sx={{
+                textAlign: "left",
+                fontFamily: "Montserrat",
+                fontSize: { xs: "18px", sm: "22px" },
+                fontStyle: "normal",
+                fontWeight: 500,
+                lineHeight: "36px",
+                marginBottom: "20px",
+              }}>
+              Dr. Krishnendra Shekhawat
+            </Typography>
+            <Typography
+              sx={{
+                textAlign: "left",
+                fontFamily: "Montserrat",
+                fontSize: { xs: "18px", sm: "22px" },
+                fontStyle: "normal",
+                fontWeight: 500,
+                lineHeight: "36px",
+                marginBottom: "20px",
+              }}>
+              Founder @GPLAN
+            </Typography>
+            <Typography
+              sx={{
+                textAlign: "left",
+                fontFamily: "Montserrat",
+                fontSize: { xs: "18px", sm: "22px" },
+                fontStyle: "normal",
+                fontWeight: 500,
+                lineHeight: "36px",
+                marginBottom: "20px",
+              }}>
+              Professor @BITS Pilani
+            </Typography>
+            <Typography
+              sx={{
+                textAlign: "left",
+                fontFamily: "Montserrat",
+                fontSize: { xs: "18px", sm: "22px" },
+                fontStyle: "normal",
+                fontWeight: 500,
+                lineHeight: "36px",
+                marginBottom: "20px",
+              }}>
+              PhD Mathematics @University of Geneva
+            </Typography>
+          </Box>
+        </Box>
       </Grid>
+      <Footer />
     </>
   )
 }
