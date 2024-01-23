@@ -3,7 +3,8 @@ import Home from './components/utils/Home';
 
 function App() {
   return (
-    <><Home/>
+    <>
+      <Home />
     </>
   );
 }
