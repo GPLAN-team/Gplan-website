@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
-import loginBG from "../public/loginBG.png";
+import loginBG from "./../../public/loginBG.png";
 import googleLogo from "../public/googleLogo.png";
 import fbLogo from "../public/fbLogo.png";
 

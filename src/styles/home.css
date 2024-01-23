@@ -12,6 +12,13 @@ html {
   z-index: 1;
 }
 
+.linkNav{
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .Toolbar {
   display: flex;
   height: 94px;
