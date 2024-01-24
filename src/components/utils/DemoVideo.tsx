@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import video_placeholder from "../../public/video_placeholder.svg";
+import algoPlaceH from "../../public/algoPlaceH.png";
 
 export default function DemoVideo() {
   return(
@@ -57,7 +57,7 @@ export default function DemoVideo() {
                 height: { xs: "400px", sm: "500px" },
               }}
             >
-              <img src={video_placeholder} height="100%" width="auto" alt="" />
+              <img src={algoPlaceH} height="100%" width="auto" alt="" />
             </Box>
           </Box>
         </Box>
