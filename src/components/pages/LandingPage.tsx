@@ -23,8 +23,8 @@ function LandingPage() {
       <Features/>
       <Pricing/>
       <DemoVideo/>
-      <GuidedVideos/>
-      <OurStory/>
+      {/* <GuidedVideos/> */}
+      {/* <OurStory/> */}
       <Footer />
     </>
   );
