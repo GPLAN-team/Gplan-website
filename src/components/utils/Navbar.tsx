@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link';
 import { useState } from 'react'
 import { Box, Toolbar, IconButton, SwipeableDrawer } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
@@ -34,7 +35,7 @@ function Navbar() {
       </div>
 
       <div style={{ paddingBottom: "24px" }}>
-        <p className="DrawerButtons">Home</p>
+        {/* <p className="DrawerButtons">Home</p>
         <a
           className="DrawerButtons"
           href="#features-section"
@@ -51,11 +52,29 @@ function Navbar() {
           onClick={handleDrawerToggle}
         >
           Contact Us
-        </a>
+        </a> */}
+        <Link to='/' className='linkNav'>
+          <p className='DrawerButtons'>Home</p>
+        </Link>
+        <HashLink className="DrawerButtons" smooth to="/#features-section" onClick={handleDrawerToggle}>
+          Features
+        </HashLink>
+        <Link to='/guide' className='linkNav'>
+          <p className='DrawerButtons'>Quickstart Guides</p>
+        </Link>
+        <Link to='/about-us' className='linkNav'>
+          <p className='DrawerButtons'>About Us</p>
+        </Link>
+        <HashLink className='DrawerButtons' smooth to="#footer" onClick={handleDrawerToggle}>
+          Contact Us
+        </HashLink>
       </div>
     </div>
   )
-
+  // const contactDivRef = useRef<HTMLDivElement>(null);
+  // const handleContactUs = () => {
+  //   contactDivRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
+  // };
   return (
     <>
       <div>
@@ -67,34 +86,27 @@ function Navbar() {
                 <p className='NavLogoText'>GPLAN</p>
               </div>
             </Link>
-
             <Box
               className='NavButtonBox'
               sx={{
                 display: { xs: 'none', sm: 'flex' },
               }}
             >
-
               <Link to='/' className='linkNav'>
                 <p className='NavButtons'>Home</p>
               </Link>
-
-              <a className="NavButtons" href="#features-section">
+              <HashLink className="NavButtons" smooth to="/#features-section">
                 Features
-              </a>
-
+              </HashLink>
               <Link to='/guide' className='linkNav'>
                 <p className='NavButtons'>Quickstart Guides</p>
               </Link>
               <Link to='/about-us' className='linkNav'>
                 <p className='NavButtons'>About Us</p>
               </Link>
-
-              <a className='NavButtons' href='#footer'>
-
+              <HashLink className='NavButtons' smooth to="#footer">
                 Contact Us
-              </a>
-
+              </HashLink>
               <Link to='/login' className='linkNav'>
                 <button className='NavLoginButton'>Login</button>
               </Link>

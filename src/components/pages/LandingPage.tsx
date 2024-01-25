@@ -21,10 +21,10 @@ function LandingPage() {
       <InfoSection/>
       {/* <GetStarted/> */}
       <Features/>
-      <Pricing/>
+      {/* <Pricing/>p */}
       <DemoVideo/>
-      <GuidedVideos/>
-      <OurStory/>
+      {/* <GuidedVideos/> */}
+      {/* <OurStory/> */}
       <Footer />
     </>
   );
