@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
 import { Box, Toolbar, IconButton, SwipeableDrawer } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
@@ -34,7 +34,7 @@ function Navbar() {
         </IconButton>
       </div>
 
-      <div style={{ paddingBottom: "24px" }}>
+      <div style={{ paddingBottom: '24px' }}>
         {/* <p className="DrawerButtons">Home</p>
         <a
           className="DrawerButtons"
@@ -56,16 +56,26 @@ function Navbar() {
         <Link to='/' className='linkNav'>
           <p className='DrawerButtons'>Home</p>
         </Link>
-        <HashLink className="DrawerButtons" smooth to="/#features-section" onClick={handleDrawerToggle}>
+        <HashLink
+          className='DrawerButtons'
+          smooth
+          to='/#features-section'
+          onClick={handleDrawerToggle}
+        >
           Features
         </HashLink>
-        <Link to='/guide' className='linkNav'>
+        {/* <Link to='/guide' className='linkNav'>
           <p className='DrawerButtons'>Quickstart Guides</p>
-        </Link>
+        </Link> */}
         <Link to='/about-us' className='linkNav'>
           <p className='DrawerButtons'>About Us</p>
         </Link>
-        <HashLink className='DrawerButtons' smooth to="#footer" onClick={handleDrawerToggle}>
+        <HashLink
+          className='DrawerButtons'
+          smooth
+          to='#footer'
+          onClick={handleDrawerToggle}
+        >
           Contact Us
         </HashLink>
       </div>
@@ -95,16 +105,16 @@ function Navbar() {
               <Link to='/' className='linkNav'>
                 <p className='NavButtons'>Home</p>
               </Link>
-              <HashLink className="NavButtons" smooth to="/#features-section">
+              <HashLink className='NavButtons' smooth to='/#features-section'>
                 Features
               </HashLink>
-              <Link to='/guide' className='linkNav'>
+              {/* <Link to='/guide' className='linkNav'>
                 <p className='NavButtons'>Quickstart Guides</p>
-              </Link>
+              </Link> */}
               <Link to='/about-us' className='linkNav'>
                 <p className='NavButtons'>About Us</p>
               </Link>
-              <HashLink className='NavButtons' smooth to="#footer">
+              <HashLink className='NavButtons' smooth to='#footer'>
                 Contact Us
               </HashLink>
               <Link to='/login' className='linkNav'>
