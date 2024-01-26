@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.74b8d536.css",
-    "main.js": "/static/js/main.4ef619de.js",
+    "main.js": "/static/js/main.5ede99ad.js",
     "static/js/787.2f7e2b9e.chunk.js": "/static/js/787.2f7e2b9e.chunk.js",
     "static/media/loginBG.png": "/static/media/loginBG.b04631a75e98cc969d19.png",
     "static/media/landingBG.png": "/static/media/landingBG.ff70568439c40c48e062.png",
-    "static/media/algoPlaceH.png": "/static/media/algoPlaceH.ef334f4edc8933110592.png",
+    "static/media/algoBG.png": "/static/media/algoBG.3f5447007f86f4e03189.png",
+    "static/media/algoPlaceH.png": "/static/media/algoPlaceH.6b652cbfda74c9d1bb5f.png",
     "static/media/upper-macbook.svg": "/static/media/upper-macbook.deffd7919d4a02bc7238752d58c6310f.svg",
     "static/media/mac.png": "/static/media/mac.e4df63481481805efd7f.png",
+    "static/media/algoPlaceHM.png": "/static/media/algoPlaceHM.706b08d4f12f14880b47.png",
     "static/media/lower-macbook.svg": "/static/media/lower-macbook.5d90ba879307c20c7d66ec1d235be10b.svg",
     "static/media/mac_node.png": "/static/media/mac_node.898b905264bbcb30084c.png",
     "static/media/bgL1.png": "/static/media/bgL1.1b0202b06d6046bf3cae.png",
@@ -19,11 +21,11 @@
     "static/media/lower-bg-wave.svg": "/static/media/lower-bg-wave.b0bf4c99fd9b68ff9d930c0056101893.svg",
     "static/media/upper-bg-wave.svg": "/static/media/upper-bg-wave.63cb1bd4bb7286ec4fea7bbd358ea0b5.svg",
     "main.74b8d536.css.map": "/static/css/main.74b8d536.css.map",
-    "main.4ef619de.js.map": "/static/js/main.4ef619de.js.map",
+    "main.5ede99ad.js.map": "/static/js/main.5ede99ad.js.map",
     "787.2f7e2b9e.chunk.js.map": "/static/js/787.2f7e2b9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74b8d536.css",
-    "static/js/main.4ef619de.js"
+    "static/js/main.5ede99ad.js"
   ]
 }
