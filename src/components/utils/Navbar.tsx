@@ -117,8 +117,10 @@ function Navbar() {
               <HashLink className='NavButtons' smooth to='#footer'>
                 Contact Us
               </HashLink>
-              <Link to='/login' className='linkNav'>
-                <button className='NavLoginButton'>Login</button>
+              {/* add google form link here */}
+              {/* <Link to='/login' className='linkNav'> */}
+              <Link to='/' className='linkNav'>
+                <button className='NavLoginButton'>Join Waitlist</button>
               </Link>
             </Box>
             <IconButton

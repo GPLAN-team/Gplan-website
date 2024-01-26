@@ -1,6 +1,8 @@
 import React from 'react'
 import { Box, Grid, Typography } from '@mui/material'
 import algoPlaceH from '../../public/algoPlaceH.png'
+import algoPlaceHM from '../../public/algoPlaceHM.png'
+import algoBG from '../../public/algoBG.png'
 
 export default function DemoVideo() {
   return (
@@ -19,7 +21,8 @@ export default function DemoVideo() {
         <Box
           sx={{
             borderRadius: { xs: '24px', sm: '36px' },
-            background: '#111111',
+            backgroundSize: "cover",
+            backgroundImage: `url(${algoBG})`,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -33,7 +36,7 @@ export default function DemoVideo() {
         >
           <Typography
             sx={{
-              color: '#FFFFFF',
+              color: 'black',
               textAlign: 'left',
               fontFamily: 'Bebas Neue',
               fontSize: { xs: '32px', sm: '80px' },
@@ -54,10 +57,19 @@ export default function DemoVideo() {
           >
             <Box
               sx={{
-                height: { xs: '400px', sm: '500px' },
+                height: '500px',
+                display: { xs: 'none', sm: 'block' },
               }}
             >
-              <img src={algoPlaceH} height='100%' width='auto' alt='' />
+              <img src={algoPlaceH} height='100%' width='100%' alt='placeHolderDesktop' />
+            </Box>
+            <Box
+              sx={{
+                height: '400px',
+                display: { xs: 'block', sm: 'none' },
+              }}
+            >
+              <img src={algoPlaceHM} height='100%' width='100%' alt='placeHolderMobile' />
             </Box>
           </Box>
         </Box>
