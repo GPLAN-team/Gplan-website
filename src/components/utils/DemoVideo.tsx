@@ -1,8 +1,8 @@
 import React from 'react'
 import { Box, Grid, Typography } from '@mui/material'
 import algoPlaceH from '../../public/algoPlaceH.png'
-import algoPlaceHM from '../../public/algoPlaceHM.png'
-import algoBG from '../../public/algoBG.png'
+import algoPlaceHM from './../../public/algoPlaceHM.png'
+import algoBG from './../../public/algoBG.png'
 
 export default function DemoVideo() {
   return (
@@ -43,7 +43,7 @@ export default function DemoVideo() {
               fontStyle: 'normal',
               fontWeight: 400,
               lineHeight: 'normal',
-              mb: { xs: '55px', sm: '40px' },
+              mb: { xs: '15px', sm: '40px' },
             }}
           >
             Algorithm in Action

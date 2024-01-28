@@ -3,7 +3,6 @@ import {
   InputAdornment,
   Link,
   TextField,
-  Typography,
 } from "@mui/material";
 import React, { useState } from "react";
 import GplanIconWhite from "../icons/GplanIconWhite";
@@ -111,13 +110,13 @@ function Footer() {
           className="footer-bottom-social-link-div"
           sx={{ display: { xs: "none", sm: "flex" } }}
         >
-          <Link href="#" style={{ textDecoration: "none" }}>
+          {/* <Link href="#" style={{ textDecoration: "none" }}>
             <p className="footer-social-links">Instagram</p>
-          </Link>
-          <Link href="#" style={{ textDecoration: "none" }}>
+          </Link> */}
+          {/* <Link href="#" style={{ textDecoration: "none" }}>
             <p className="footer-social-links">Youtube</p>
-          </Link>
-          <Link href="#" style={{ textDecoration: "none" }}>
+          </Link> */}
+          <Link href="https://www.linkedin.com/company/graphplan/" target="_blank" style={{ textDecoration: "none" }}>
             <p className="footer-social-links">LinkedIn</p>
           </Link>
         </Box>
