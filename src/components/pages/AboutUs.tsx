@@ -2,13 +2,15 @@ import React from "react"
 import {
   Box,
   Grid,
+  Link,
   Typography,
 } from "@mui/material";
 import Navbar from "../utils/Navbar";
 import Footer from "../utils/Footer";
+import LinkIcon from '@mui/icons-material/Link';
 import "../../styles/home.css"
 
-function TeamMemberCard({ name, text1, text2, text3, text4 }: any) {
+function TeamMemberCard({ name, text1, text2, text3, text4, link }: any) {
   return (
     <Grid item xs={12} md={4}>
       <Box
@@ -20,71 +22,113 @@ function TeamMemberCard({ name, text1, text2, text3, text4 }: any) {
           height: '300px',
         }}
       >
-        <Typography
-          sx={{
-            textAlign: 'left',
-            fontFamily: 'Montserrat',
-            fontSize: { xs: '24px', sm: '28px' },
-            fontStyle: 'normal',
-            fontWeight: 600,
-            lineHeight: '36px',
-            marginBottom: '20px',
-          }}
-        >
-          {name}
-        </Typography>
-        <Typography
-          sx={{
-            textAlign: 'left',
-            fontFamily: 'Montserrat',
-            fontSize: { xs: '18px', sm: '22px' },
-            fontStyle: 'normal',
-            fontWeight: 500,
-            lineHeight: '36px',
-            marginBottom: '20px',
-          }}
-        >
-          {text1}
-        </Typography>
-        <Typography
-          sx={{
-            textAlign: 'left',
-            fontFamily: 'Montserrat',
-            fontSize: { xs: '18px', sm: '22px' },
-            fontStyle: 'normal',
-            fontWeight: 500,
-            lineHeight: '36px',
-            marginBottom: '20px',
-          }}
-        >
-          {text2}
-        </Typography>
-        <Typography
-          sx={{
-            textAlign: 'left',
-            fontFamily: 'Montserrat',
-            fontSize: { xs: '18px', sm: '22px' },
-            fontStyle: 'normal',
-            fontWeight: 500,
-            lineHeight: '36px',
-            marginBottom: '20px',
-          }}
-        >
-          {text3}
-        </Typography>
-        <Typography
-          sx={{
-            textAlign: 'left',
-            fontFamily: 'Montserrat',
-            fontSize: { xs: '18px', sm: '22px' },
-            fontStyle: 'normal',
-            fontWeight: 500,
-            lineHeight: '36px',
-            marginBottom: '20px',
-          }}
-        >
-          {text4}
-        </Typography>
+        <Link href={link} target="_blank" style={{ textDecoration: "none", color: "black" }}>
+          <Typography
+            sx={{
+              textAlign: 'left',
+              fontFamily: 'Montserrat',
+              fontSize: { xs: '24px', sm: '28px' },
+              fontStyle: 'normal',
+              fontWeight: 600,
+              lineHeight: '36px',
+              marginBottom: '20px',
+            }}
+          >
+            {name}
+          </Typography>
+          <Typography
+            sx={{
+              textAlign: 'left',
+              fontFamily: 'Montserrat',
+              fontSize: { xs: '18px', sm: '22px' },
+              fontStyle: 'normal',
+              fontWeight: 500,
+              lineHeight: '36px',
+              marginBottom: '20px',
+            }}
+          >
+            {text1}
+          </Typography>
+          <Typography
+            sx={{
+              textAlign: 'left',
+              fontFamily: 'Montserrat',
+              fontSize: { xs: '18px', sm: '22px' },
+              fontStyle: 'normal',
+              fontWeight: 500,
+              lineHeight: '36px',
+              marginBottom: '20px',
+            }}
+          >
+            {text2}
+          </Typography>
+          <Typography
+            sx={{
+              textAlign: 'left',
+              fontFamily: 'Montserrat',
+              fontSize: { xs: '18px', sm: '22px' },
+              fontStyle: 'normal',
+              fontWeight: 500,
+              lineHeight: '36px',
+              marginBottom: '20px',
+            }}
+          >
+            {text3}
+          </Typography>
+          <Typography
+            sx={{
+              textAlign: 'left',
+              fontFamily: 'Montserrat',
+              fontSize: { xs: '18px', sm: '22px' },
+              fontStyle: 'normal',
+              fontWeight: 500,
+              lineHeight: '36px',
+              marginBottom: '20px',
+            }}
+          >
+            {text4}
+          </Typography>
+        </Link>
+      </Box>
+    </Grid>
+  );
+}
+
+function BioCard({ text, link }: any) {
+  return (
+    <Grid item xs={12} md={6}>
+      <Box
+        sx={{
+          backgroundColor: '#EAECF0',
+          borderRadius: '10px',
+          padding: '20px',
+          boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+          height: '50px',
+        }}
+      >
+        <Link href={link} target="_blank" style={{ textDecoration: "none", color: "black" }}>
+          <Box sx={{
+            display: 'flex',
+            alignItems: 'center',
+            height: '100%',
+          }}>
+            <LinkIcon sx={{
+              fontSize: '22px',
+              marginRight: '10px'
+            }}/>
+            <Typography
+              sx={{
+                textAlign: 'left',
+                fontFamily: 'Montserrat',
+                fontSize: { xs: '13px', sm: '16px' },
+                fontStyle: 'normal',
+                fontWeight: 500,
+              }}
+            >
+              {text}
+            </Typography>
+          </Box>
+        </Link>
       </Box>
     </Grid>
   );
@@ -232,7 +276,7 @@ export default function AboutUs() {
           We aim to drive automation and spark innovation in floor planning for AEC professionals, transforming the way architectural projects are envisioned.
         </Typography>
       </Grid>
-      <Grid
+      {/* <Grid
         spacing={5}
         sx={{
           backgroundColor: "#fff",
@@ -271,7 +315,7 @@ export default function AboutUs() {
         >
           Our purpose lies in empowering architects with a plethora of design options within milliseconds. From homeowners trying to DIY, to urban planners shaping cities, GPLAN streamlines the process of floor planning for all. So, architects save time and concentrate on other aspects of construction, completing projects on time.
         </Typography>
-      </Grid>
+      </Grid> */}
       <Grid
         spacing={5}
         sx={{
@@ -347,12 +391,71 @@ export default function AboutUs() {
           }}
         >
           <Grid container>
+            {/* <Box sx={{ color: "black", marginRight: "4px" }}>Our</Box> */}
+            <Box sx={{ color: "black" }}>Bio</Box>
+          </Grid>
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: "left",
+            fontFamily: "Montserrat",
+            fontSize: { xs: "18px", sm: "22px" },
+            fontStyle: "normal",
+            fontWeight: 500,
+            lineHeight: "36px",
+            marginBottom: "20px",
+          }}>
+          Prof. Krishnendra Shekhawat has completed his PhD in Mathematics from University of Geneva
+          in the guidance of Prof. Daniel Coray. During his PhD, he has also worked with Prof. Pierre
+          Pellegrino on an Architecture Design Project. After finishing the PhD work, he joined
+          Department of Architecture (Design & amp; Computational Lab) at University of Lisbon to work as a
+          Postdoctoral Fellow in the guidance of Prof. Jose Pinto Duarte. Presently, he is an Associate
+          Professor at Department of Mathematics, BITS Pilani, India. Last year, he is appointed as
+          Scientific Advisor to Digital Blue Foam, Singapore. He has published many research papers in
+          the field of Computer-aided Architectural Design, mainly focusing on Automated Generation of
+          Floorplan Layouts. A few of them are as follows:
+        </Typography>
+        <Grid container spacing={3}>
+          <BioCard text="Raveena, Shekhawat, K. (2023) A Theory of L-shaped Floor-plans, Theoretical Computer
+Science, 942: 57 – 92." link="" />
+          <BioCard text="Bisht, S., Shekhawat, K., Upasani, N., Jain, RN., Tiwaskar, RJ., Hebbar, C. (2022)
+Transforming an Adjacency Graph into Dimensioned Floorplan Layouts, Computer Graphics
+Forum, 1-18." link="" />
+          <BioCard text="Shekhawat, K., Upasani, N., Bisht, S., Jain, RN. (2021) A Tool for Computer-Generated
+Dimensioned Floorplans based on given Adjacencies, Automation in Construction, Vol. 127." link="" />
+          <BioCard text="Shekhawat K. (2017). A computer-generated plus-shaped arrangement and its architectural
+applications. Journal of Computational Design and Engineering 4(4): 318-329." link="" />
+        </Grid>
+      </Grid>
+      <Grid
+        spacing={5}
+        sx={{
+          backgroundColor: "#fff",
+          pl: "7%",
+          pr: "7%",
+          pb: "32px",
+          mb: "36px",
+          mt: "36px",
+        }}
+      >
+        <Typography
+          sx={{
+            textAlign: "left",
+            fontFamily: "Bebas Neue",
+            fontSize: { xs: "36px", sm: "56px" },
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: "normal",
+            marginBottom: "20px",
+          }}
+        >
+          <Grid container>
             <Box sx={{ color: "black", marginRight: "4px" }}>Our</Box>
             <Box sx={{ color: { xs: "#1C4C82", sm: "black" } }}>Team</Box>
           </Grid>
         </Typography>
         <Grid container spacing={4}>
-          <TeamMemberCard name="Dr. Krishnendra Shekhawat" text1="Founder @GPLAN" text2="Professor @BITS Pilani" text3="PhD Mathematics @University of Geneva" />
+          <TeamMemberCard name="Dr. Krishnendra Shekhawat" text1="Founder @GPLAN" text2="Professor @BITS Pilani" text3="PhD Mathematics @University of Geneva" link="https://www.bits-pilani.ac.in/pilani/krishnendra-shekhawat/" />
           <TeamMemberCard name="Rahil N Jain" text1="Tech & Product Lead" text2="Associate @Goldman Sachs" text3="Ex - Amazon" text4="MSc. Mathematics and BE. Computer Science @BITS Pilani" />
           <TeamMemberCard name="Ayush Agarwal" text1="Tech Lead" text2="Ex - Sprinklr" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
           <TeamMemberCard name="Sujay Rastogi" text1="Tech Lead" text2="Ex - Amazon" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
