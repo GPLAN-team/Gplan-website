@@ -11,6 +11,7 @@ import RightArrowBlueBG from "../../public/right-arrow-blue-bg.svg";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MailIcon from '@mui/icons-material/Mail';
+import emailjs from '@emailjs/browser';
 
 function Footer() {
   const [Email, setEmail] = useState("");
@@ -18,6 +19,16 @@ function Footer() {
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setEmail(event.target.value);
+  };
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    emailjs.sendForm('service_33u9zzp', 'demo', e.currentTarget, 'ZmHT-LEvyKBSsbp-t')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
   };
 
   const [showPopup, setShowPopup] = useState(false);
@@ -30,10 +41,6 @@ function Footer() {
     } catch (err) {
       console.error("Failed to copy:", err);
     }
-  };
-
-  const handleOnClick = () => {
-    //BackEnd Call
   };
 
   return (
@@ -91,36 +98,39 @@ function Footer() {
           className="text-field-div"
           sx={{ width: { xs: "340px", sm: "625px" } }}
         >
-          <TextField
-            sx={{
-              backgroundColor: "white",
-              padding: "4px",
-              textAlign: "center",
-              "& fieldset": { border: "none" },
-            }}
-            fullWidth
-            InputProps={{
-              endAdornment: (
-                <InputAdornment position="end">
-                  <img
-                    onClick={handleOnClick}
-                    className="text-field-img"
-                    src={RightArrowBlueBG}
-                    alt="right-arrow-blue-bg"
-                  />
-                </InputAdornment>
-              ),
-            }}
-            InputLabelProps={{
-              shrink: false,
-              className: "input-label-props",
-            }}
-            type="text"
-            label={Email === "" ? "Email" : ""}
-            name="Email"
-            value={Email}
-            onChange={handleEmailChange}
-          />
+          <form onSubmit={sendEmail}>
+            <TextField
+              sx={{
+                backgroundColor: "white",
+                padding: "4px",
+                textAlign: "center",
+                "& fieldset": { border: "none" },
+              }}
+              fullWidth
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <button type="submit" style={{ border: "none", background: "none",margin:0, padding: 0, paddingTop: "4px", cursor: "pointer" }}>
+                      <img
+                        className="text-field-img"
+                        src={RightArrowBlueBG}
+                        alt="right-arrow-blue-bg"
+                      />
+                    </button>
+                  </InputAdornment>
+                ),
+              }}
+              InputLabelProps={{
+                shrink: false,
+                className: "input-label-props",
+              }}
+              type="text"
+              label={Email === "" ? "Email" : ""}
+              name="Email"
+              value={Email}
+              onChange={handleEmailChange}
+            />
+          </form>
         </Box>
         <Box
           className="footer-bottom-social-link-div"
