@@ -239,7 +239,7 @@ export default function AboutUs() {
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -251,7 +251,7 @@ export default function AboutUs() {
           By leveraging advanced algorithms deeply rooted in Graph Theory we want to unleash architectural creativity through automated floor planning.        </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -264,7 +264,7 @@ export default function AboutUs() {
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -345,7 +345,7 @@ export default function AboutUs() {
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -357,7 +357,7 @@ export default function AboutUs() {
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -369,7 +369,7 @@ export default function AboutUs() {
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -408,7 +408,7 @@ export default function AboutUs() {
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -469,10 +469,10 @@ applications. Journal of Computational Design and Engineering 4(4): 318-329." />
         <Grid container spacing={4}>
           <TeamMemberCard name="Dr. Krishnendra Shekhawat" text1="Founder @GPLAN" text2="Professor @BITS Pilani" text3="PhD Mathematics @University of Geneva" link="https://www.bits-pilani.ac.in/pilani/krishnendra-shekhawat/" />
           <TeamMemberCard name="Rahil N Jain" text1="Tech & Product Lead" text2="Associate @Goldman Sachs" text3="Intern @Amazon" text4="MSc. Mathematics and BE. Computer Science @BITS Pilani" />
-          <TeamMemberCard name="Ayush Agarwal" text1="Tech Lead" text2="Ex - Sprinklr" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
-          <TeamMemberCard name="Sujay Rastogi" text1="Tech Lead" text2="Ex - Amazon" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
-          <TeamMemberCard name="Bhavy Goel" text1="Tech Lead" text2="Ex - Moveworks" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
-          <TeamMemberCard name="Fahad Qureshi" text1="Strategy & Business Head" text2="PM @Swiggy" text3="Ex - GE HealthCare" text4="BE. Manufacturing @BITS Pilani" />
+          <TeamMemberCard name="Ayush Agarwal" text1="Tech Lead" text2="Intern @Sprinklr" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
+          <TeamMemberCard name="Sujay Rastogi" text1="Tech Lead" text2="Intern @Amazon" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
+          <TeamMemberCard name="Bhavy Goel" text1="Tech Lead" text2="Intern @Moveworks" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
+          <TeamMemberCard name="Fahad Qureshi" text1="Strategy & Business Head" text2="PM @Swiggy" text3="Intern @GE HealthCare" text4="BE. Manufacturing @BITS Pilani" />
         </Grid>
       </Grid>
       <Footer />
