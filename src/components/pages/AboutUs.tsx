@@ -115,7 +115,7 @@ function BioCard({ text, link }: any) {
             <LinkIcon sx={{
               fontSize: '22px',
               marginRight: '10px'
-            }}/>
+            }} />
             <Typography
               sx={{
                 textAlign: 'left',
@@ -239,7 +239,7 @@ export default function AboutUs() {
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -251,7 +251,7 @@ export default function AboutUs() {
           By leveraging advanced algorithms deeply rooted in Graph Theory we want to unleash architectural creativity through automated floor planning.        </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -264,7 +264,7 @@ export default function AboutUs() {
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -345,7 +345,7 @@ export default function AboutUs() {
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -353,11 +353,11 @@ export default function AboutUs() {
             lineHeight: "36px",
             marginBottom: "20px",
           }}>
-          In 2020, a friend struggling with a floor plan for #placeholder# approached Professor Shekhawat, to help him efficiently draw a plan of this scale. With his expertise in graph theory, he started formulating an algorithm. On completion, he had a way to not only make the process swift but also give all the possible options to save his friend the trouble of redrawing every time the client didn’t approve the design. The gratitude was customer validation in disguise, fueling an urge to expand this algorithm to a project and then to a company.
+          In 2014, the founder, Prof. Shekhawat had an interview with Prof. Mark Goulthorpe, Associate Professor at Dept. of Architecture, Massachusetts Institute of Technology (MIT), for a Postdoctoral Position. Prof. Goulthorpe was developing a project with the concept of Design-Yourself-a-House and on boarded Prof. Shekhawat. The idea didn’t progress further due to lack of funding, but it remained with Prof. Shekhawat.
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -365,8 +365,19 @@ export default function AboutUs() {
             lineHeight: "36px",
             marginBottom: "20px",
           }}>
-          With this vision, our founder, Prof. Shekhawat, with a group of his students, sat every week devising algorithms to incorporate an algorithm for every problem that architects might face while drawing out a floor plan, into GPLAN. Thus, #x# research papers and countless hours later, we propose GPLAN.
+          In 2015, Prof. Shekhawat got a Postdoctoral Position at the University of Lisbon to work with Prof. Duarte, who has expertise in the field of Shape Grammar and was working on Mass Customization of Houses. Prof. Shekhawat dived deep in Architectural Design at Lisbon and moved to BITS Pilani in 2016, where the idea started taking the shape of a project and eventually a software company.
         </Typography>
+        <Typography
+          sx={{
+            textAlign: "justify",
+            fontFamily: "Montserrat",
+            fontSize: { xs: "18px", sm: "22px" },
+            fontStyle: "normal",
+            fontWeight: 500,
+            lineHeight: "36px",
+            marginBottom: "20px",
+          }}>
+          Refining the idea for the past 7 years, he has been working with his research and undergraduate students to build GPLAN, which can accurately generate all possible floorplan layouts for any given design brief.        </Typography>
       </Grid>
       <Grid
         spacing={5}
@@ -392,12 +403,12 @@ export default function AboutUs() {
         >
           <Grid container>
             {/* <Box sx={{ color: "black", marginRight: "4px" }}>Our</Box> */}
-            <Box sx={{ color: "black" }}>Bio</Box>
+            <Box sx={{ color: "black" }}>Our Founder</Box>
           </Grid>
         </Typography>
         <Typography
           sx={{
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Montserrat",
             fontSize: { xs: "18px", sm: "22px" },
             fontStyle: "normal",
@@ -416,15 +427,16 @@ export default function AboutUs() {
           Floorplan Layouts. A few of them are as follows:
         </Typography>
         <Grid container spacing={3}>
+          {/* add link with this param link="" */}
           <BioCard text="Raveena, Shekhawat, K. (2023) A Theory of L-shaped Floor-plans, Theoretical Computer
-Science, 942: 57 – 92." link="" />
+Science, 942: 57 – 92."  />
           <BioCard text="Bisht, S., Shekhawat, K., Upasani, N., Jain, RN., Tiwaskar, RJ., Hebbar, C. (2022)
 Transforming an Adjacency Graph into Dimensioned Floorplan Layouts, Computer Graphics
-Forum, 1-18." link="" />
+Forum, 1-18."  />
           <BioCard text="Shekhawat, K., Upasani, N., Bisht, S., Jain, RN. (2021) A Tool for Computer-Generated
-Dimensioned Floorplans based on given Adjacencies, Automation in Construction, Vol. 127." link="" />
+Dimensioned Floorplans based on given Adjacencies, Automation in Construction, Vol. 127."/>
           <BioCard text="Shekhawat K. (2017). A computer-generated plus-shaped arrangement and its architectural
-applications. Journal of Computational Design and Engineering 4(4): 318-329." link="" />
+applications. Journal of Computational Design and Engineering 4(4): 318-329." />
         </Grid>
       </Grid>
       <Grid
@@ -456,11 +468,11 @@ applications. Journal of Computational Design and Engineering 4(4): 318-329." li
         </Typography>
         <Grid container spacing={4}>
           <TeamMemberCard name="Dr. Krishnendra Shekhawat" text1="Founder @GPLAN" text2="Professor @BITS Pilani" text3="PhD Mathematics @University of Geneva" link="https://www.bits-pilani.ac.in/pilani/krishnendra-shekhawat/" />
-          <TeamMemberCard name="Rahil N Jain" text1="Tech & Product Lead" text2="Associate @Goldman Sachs" text3="Ex - Amazon" text4="MSc. Mathematics and BE. Computer Science @BITS Pilani" />
-          <TeamMemberCard name="Ayush Agarwal" text1="Tech Lead" text2="Ex - Sprinklr" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
-          <TeamMemberCard name="Sujay Rastogi" text1="Tech Lead" text2="Ex - Amazon" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
-          <TeamMemberCard name="Bhavy Goel" text1="Tech Lead" text2="Ex - Moveworks" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
-          <TeamMemberCard name="Fahad Qureshi" text1="Strategy & Business Head" text2="PM @Swiggy" text3="Ex - GE HealthCare" text4="BE. Manufacturing @BITS Pilani" />
+          <TeamMemberCard name="Rahil N Jain" text1="Tech & Product Lead" text2="Associate @Goldman Sachs" text3="Intern @Amazon" text4="MSc. Mathematics and BE. Computer Science @BITS Pilani" />
+          <TeamMemberCard name="Ayush Agarwal" text1="Tech Lead" text2="Intern @Sprinklr" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
+          <TeamMemberCard name="Sujay Rastogi" text1="Tech Lead" text2="Intern @Amazon" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
+          <TeamMemberCard name="Bhavy Goel" text1="Tech Lead" text2="Intern @Moveworks" text3="MSc. Mathematics and BE. Computer Science @BITS Pilani" text4="" />
+          <TeamMemberCard name="Fahad Qureshi" text1="Strategy & Business Head" text2="PM @Swiggy" text3="Intern @GE HealthCare" text4="BE. Manufacturing @BITS Pilani" />
         </Grid>
       </Grid>
       <Footer />
