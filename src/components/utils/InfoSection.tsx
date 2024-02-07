@@ -13,7 +13,8 @@ const InfoSection = () => {
             <Box sx={{ height: { xs: "76px", sm: "96px" } }}>
               <img src={component1} height="100%" width="auto" alt="" />
             </Box>
-            <p className="info-text">Powerful Graph Editor</p>
+            <p className="info-text">Explore Variations</p>
+            <p className="info-sub-text">Swiftly generate all possible floorplans with the given constraints.</p>
           </Box>
         </Grid>
         <Grid item xs={12} md={4}>
@@ -21,7 +22,8 @@ const InfoSection = () => {
             <Box sx={{ height: { xs: "76px", sm: "96px" } }}>
               <img src={component2} height="100%" width="auto" alt="" />
             </Box>
-            <p className="info-text">Quick Generative FloorPlans</p>
+            <p className="info-text">Rapid Execution</p>
+            <p className="info-sub-text">Get multiple layouts in seconds, all of them accurate.</p>
           </Box>
         </Grid>
         <Grid item xs={12} md={4}>
@@ -29,7 +31,8 @@ const InfoSection = () => {
             <Box sx={{ height: { xs: "76px", sm: "96px" } }}>
               <img src={component3} height="100%" width="auto" alt="" />
             </Box>
-            <p className="info-text">Export To Your Preferred Tools</p>
+            <p className="info-text">Export Capabilities</p>
+            <p className="info-sub-text">Directly export to your preferred tools like Revit, Rhino & AutoCAD.</p>
           </Box>
         </Grid>
       </Grid>
