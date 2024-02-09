@@ -119,7 +119,7 @@ function Navbar() {
               </HashLink>
               {/* add google form link here */}
               {/* <Link to='/login' className='linkNav'> */}
-              <Link to='/' className='linkNav'>
+              <Link target='_blank' to="https://forms.gle/su6taEh4KNbjvbBW9" className='linkNav'>
                 <button className='NavLoginButton'>Join Waitlist</button>
               </Link>
             </Box>

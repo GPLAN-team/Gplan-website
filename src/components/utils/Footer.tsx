@@ -13,6 +13,42 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MailIcon from '@mui/icons-material/Mail';
 import emailjs from '@emailjs/browser';
 
+interface Popup1Props {
+  textToPop: string;
+}
+
+const Popup1: React.FC<Popup1Props> = ({ textToPop }) => {
+  return (
+    <Box
+      id="popup"
+      sx={{
+        position: 'fixed',
+        background: 'rgba(0, 0, 0, 0.8)',
+        top: 20,
+        right: 20,
+        padding: '10px',
+        borderRadius: '10px',
+        transition: 'all 0.5s ease-in-out',
+        color: 'white',
+        zIndex: 2,
+      }}
+    >
+      <Typography
+        sx={{
+          textAlign: "center",
+          fontFamily: "Montserrat",
+          fontSize: { xs: "10px", sm: "20px" },
+          fontStyle: "normal",
+          fontWeight: 400,
+          lineHeight: "normal",
+        }}
+      >
+        {textToPop}
+      </Typography>
+    </Box>
+  )
+}
+
 function Footer() {
   const [Email, setEmail] = useState("");
   const handleEmailChange = (
@@ -23,15 +59,30 @@ function Footer() {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (e.currentTarget.Email.value === "") {
+      console.log("Email is empty")
+      return;
+    }
+    const email = e.currentTarget.Email.value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email.match(emailRegex)) {
+      console.log("Invalid Email Format");
+      setShowEmailPopup(true);
+      setTimeout(() => setShowEmailPopup(false), 2000);
+      return;
+    }
     emailjs.sendForm('service_33u9zzp', 'demo', e.currentTarget, 'ZmHT-LEvyKBSsbp-t')
       .then((result) => {
         console.log(result.text);
+        setEmail("");
       }, (error) => {
         console.log(error.text);
       });
   };
 
   const [showPopup, setShowPopup] = useState(false);
+  const [showEmailPopup, setShowEmailPopup] = useState(false);
 
   const handleCopy = async (text: string) => {
     try {
@@ -110,7 +161,7 @@ function Footer() {
               InputProps={{
                 endAdornment: (
                   <InputAdornment position="end">
-                    <button type="submit" style={{ border: "none", background: "none",margin:0, padding: 0, paddingTop: "4px", cursor: "pointer" }}>
+                    <button type="submit" style={{ border: "none", background: "none", margin: 0, padding: 0, paddingTop: "4px", cursor: "pointer" }}>
                       <img
                         className="text-field-img"
                         src={RightArrowBlueBG}
@@ -132,38 +183,12 @@ function Footer() {
             />
           </form>
         </Box>
+        {showEmailPopup && (<Popup1 textToPop="Invalid Email Format"/>)}
         <Box
           className="footer-bottom-social-link-div"
           sx={{ display: { xs: "none", sm: "flex" } }}
         >
-          {showPopup && (
-            <Box
-              id="popup"
-              sx={{
-                position: 'fixed',
-                background: 'rgba(0, 0, 0, 0.8)',
-                top: 20,
-                right: 20,
-                padding: '10px',
-                borderRadius: '10px',
-                transition: 'all 0.5s ease-in-out',
-                color: 'white',
-                zIndex: 2,
-              }}
-            >
-              <Typography
-                sx={{
-                  textAlign: "center",
-                  fontFamily: "Montserrat",
-                  fontSize: { xs: "10px", sm: "20px" },
-                  fontStyle: "normal",
-                  fontWeight: 400,
-                  lineHeight: "normal",
-                }}
-              >
-                Copied to Clipboard!
-              </Typography>
-            </Box>)}
+          {showPopup && (<Popup1 textToPop="Copied to Clipboard"/>)}
           {/* <Link href="#" style={{ textDecoration: "none" }}>
             <p className="footer-social-links">Instagram</p>
           </Link> */}
