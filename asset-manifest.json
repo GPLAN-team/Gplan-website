@@ -1,31 +1,31 @@
 {
   "files": {
     "main.css": "/static/css/main.3c111029.css",
-    "main.js": "/static/js/main.d30cee09.js",
+    "main.js": "/static/js/main.56051517.js",
     "static/js/787.2f7e2b9e.chunk.js": "/static/js/787.2f7e2b9e.chunk.js",
     "static/media/loginBG.png": "/static/media/loginBG.b04631a75e98cc969d19.png",
     "static/media/landingBG.png": "/static/media/landingBG.ff70568439c40c48e062.png",
     "static/media/algoBG.png": "/static/media/algoBG.3f5447007f86f4e03189.png",
     "static/media/algoPlaceH.png": "/static/media/algoPlaceH.1f8acd5ba21899c9c480.png",
-    "static/media/upper-macbook.svg": "/static/media/upper-macbook.deffd7919d4a02bc7238752d58c6310f.svg",
+    "static/media/upper-macbook.svg": "/static/media/upper-macbook.b9fcb1d6cccca1385a06d745b93f3b4a.svg",
     "static/media/mac.png": "/static/media/mac.e4df63481481805efd7f.png",
     "static/media/algoPlaceHM.png": "/static/media/algoPlaceHM.6d0e492d85b9ac70d7ce.png",
-    "static/media/lower-macbook.svg": "/static/media/lower-macbook.5d90ba879307c20c7d66ec1d235be10b.svg",
+    "static/media/lower-macbook.svg": "/static/media/lower-macbook.27d08dd9a9e4b738f650544cbfc7a39e.svg",
     "static/media/mac_node.png": "/static/media/mac_node.898b905264bbcb30084c.png",
     "static/media/bgL1.png": "/static/media/bgL1.1b0202b06d6046bf3cae.png",
-    "static/media/component1.svg": "/static/media/component1.298f78bb2bec4716036ee873b8a5337a.svg",
-    "static/media/component2.svg": "/static/media/component2.117699a17e9e12e2daf55fa4b6d36871.svg",
-    "static/media/component3.svg": "/static/media/component3.e9c9aa4c28448b9ec1614a8ac36e5d47.svg",
+    "static/media/component1.svg": "/static/media/component1.e4b670a552760d47d1322b78e5d0f0f8.svg",
+    "static/media/component2.svg": "/static/media/component2.7283dbfc47d8a86e5adbbe74952ec317.svg",
+    "static/media/component3.svg": "/static/media/component3.b7bd537a7b123cbdcfc2e42c4df00946.svg",
     "index.html": "/index.html",
-    "static/media/right-arrow-blue-bg.svg": "/static/media/right-arrow-blue-bg.2c02ca2b2802b9f85428836ef89acc46.svg",
-    "static/media/lower-bg-wave.svg": "/static/media/lower-bg-wave.b0bf4c99fd9b68ff9d930c0056101893.svg",
-    "static/media/upper-bg-wave.svg": "/static/media/upper-bg-wave.63cb1bd4bb7286ec4fea7bbd358ea0b5.svg",
+    "static/media/right-arrow-blue-bg.svg": "/static/media/right-arrow-blue-bg.e6fc898e90658a7376a0282d41911ad0.svg",
+    "static/media/lower-bg-wave.svg": "/static/media/lower-bg-wave.9a6cbf23b292aa479fb11f5a33a5e3c9.svg",
+    "static/media/upper-bg-wave.svg": "/static/media/upper-bg-wave.45759ca0d288e4698eb308e97ee2636c.svg",
     "main.3c111029.css.map": "/static/css/main.3c111029.css.map",
-    "main.d30cee09.js.map": "/static/js/main.d30cee09.js.map",
+    "main.56051517.js.map": "/static/js/main.56051517.js.map",
     "787.2f7e2b9e.chunk.js.map": "/static/js/787.2f7e2b9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c111029.css",
-    "static/js/main.d30cee09.js"
+    "static/js/main.56051517.js"
   ]
 }
