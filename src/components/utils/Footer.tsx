@@ -222,6 +222,15 @@ function Footer() {
               <p className="footer-social-links">LinkedIn</p>
             </Box>
           </Link>
+          <Link href="https://whatsapp.com/channel/0029VajTRLkEQIam6IHBek2W/" target="_blank" style={{ textDecoration: "none" }}>
+            <Box sx={{
+              display: 'flex',
+              alignItems: 'center'
+            }}>
+              <p className="footer-social-links" style={{ fontSize: "10px" }}>WhatsApp</p>
+            </Box>
+          </Link>
+        </Box>
         </Box>
         <Box
           className="footer-bottom-social-link-div"
