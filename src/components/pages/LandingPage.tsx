@@ -10,7 +10,7 @@ import Pricing from "../utils/Pricing";
 import GuidedVideos from "../utils/GuidedVideos";
 import OurStory from "../utils/OurStory";
 import DemoVideo from "../utils/DemoVideo";
-import Features from "../utils/Features";
+import Features from "./../utils/Features";
 
 function LandingPage() {
   return (

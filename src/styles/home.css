@@ -318,16 +318,56 @@ html {
 }
 
 #macNode {
-  margin-left: 5%;
-  animation: slide-up-fade-in 1s forwards, slide-up-fade-out 1s forwards;
-  animation-delay: 0s, 2.5s;
+  animation: macNodeAnimation 10s ease-in-out infinite;
+  animation-delay: 0s;
 }
 
 #plan {
-  margin-left: 5%;
-  margin-top: 190%;
-  animation: slide-up-fade-in-plan 1s forwards;
-  animation-delay: 2.5s;
+  animation: planAnimation 10s ease-in-out infinite;
+  opacity: 0;
+  animation-delay: 5s;
+}
+
+@keyframes macNodeAnimation {
+  0% {
+    margin-top: 100%;
+    opacity: 0;
+  }
+
+  5%, 45% {    
+    margin-top: 17%;
+    opacity: 1;
+  }
+
+  50% {
+    margin-top: -100%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes planAnimation {
+  0% {
+    margin-top: 100%;
+    opacity: 0;
+  }
+
+  5%, 45% {    
+    margin-top: 35%;
+    opacity: 1;
+  }
+
+  50% {
+    margin-top: -100%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 100%;
+    opacity: 0;
+  }
 }
 
 @keyframes slide-up-fade-in {
@@ -391,6 +431,20 @@ html {
   line-height: 120%;
   letter-spacing: -0.24px;
   text-transform: capitalize;
+}
+
+.info-sub-text {
+  width: 80%;
+  margin-top: 0px;
+  color: #404040;
+  margin: 0px;
+  display: inline-block;
+  font-family: "Plus Jakarta Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-align: center;
 }
 
 /* --InfoSection Ends-- */
