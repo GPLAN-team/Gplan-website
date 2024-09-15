@@ -65,7 +65,7 @@ const PricingCard = (props: {
         <button
           onClick={() => {
             //Redirect to https://app.gplan.in/signup
-            window.location.href = "http://localhost:3000/signup";
+            window.location.href = "https://app.gplan.in/signup";
           }}
           className="pricing-footer-button"
         >

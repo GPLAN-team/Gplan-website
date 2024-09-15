@@ -8,7 +8,7 @@ import {
 import React, { useState } from "react";
 import GplanIconWhite from "../icons/GplanIconWhite";
 import RightArrowBlueBG from "../../public/right-arrow-blue-bg.svg";
-
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function Footer() {
   const [Email, setEmail] = useState("");
   const handleEmailChange = (
@@ -111,16 +111,25 @@ function Footer() {
           className="footer-bottom-social-link-div"
           sx={{ display: { xs: "none", sm: "flex" } }}
         >
-          <Link href="#" style={{ textDecoration: "none" }}>
+          <Link
+            href="https://whatsapp.com/channel/0029VajTRLkEQIam6IHBek2W"
+            style={{ textDecoration: "none" }}
+          >
             <p className="footer-social-links">WhatsApp</p>
           </Link>
           <Link href="#" style={{ textDecoration: "none" }}>
-            <p className="footer-social-links">Instagram</p>
+            <p className="footer-social-links">Phone: +91 94688 39182</p>
           </Link>
-          <Link href="#" style={{ textDecoration: "none" }}>
-            <p className="footer-social-links">Youtube</p>
+          <Link
+            href="mailto:✉️support@gplan.in"
+            style={{ textDecoration: "none" }}
+          >
+            <p className="footer-social-links">Email: support@gplan.in</p>
           </Link>
-          <Link href="#" style={{ textDecoration: "none" }}>
+          <Link
+            href="https://www.linkedin.com/company/graphplan/"
+            style={{ textDecoration: "none" }}
+          >
             <p className="footer-social-links">LinkedIn</p>
           </Link>
         </Box>
