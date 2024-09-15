@@ -8,10 +8,11 @@ import {
 import React, { useState } from "react";
 import GplanIconWhite from "../icons/GplanIconWhite";
 import RightArrowBlueBG from "../../public/right-arrow-blue-bg.svg";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import MailIcon from '@mui/icons-material/Mail';
-import emailjs from '@emailjs/browser';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import MailIcon from "@mui/icons-material/Mail";
+import emailjs from "@emailjs/browser";
+import { WhatsApp } from "@mui/icons-material";
 
 interface Popup1Props {
   textToPop: string;
@@ -22,14 +23,14 @@ const Popup1: React.FC<Popup1Props> = ({ textToPop }) => {
     <Box
       id="popup"
       sx={{
-        position: 'fixed',
-        background: 'rgba(0, 0, 0, 0.8)',
+        position: "fixed",
+        background: "rgba(0, 0, 0, 0.8)",
         top: 20,
         right: 20,
-        padding: '10px',
-        borderRadius: '10px',
-        transition: 'all 0.5s ease-in-out',
-        color: 'white',
+        padding: "10px",
+        borderRadius: "10px",
+        transition: "all 0.5s ease-in-out",
+        color: "white",
         zIndex: 2,
       }}
     >
@@ -46,8 +47,8 @@ const Popup1: React.FC<Popup1Props> = ({ textToPop }) => {
         {textToPop}
       </Typography>
     </Box>
-  )
-}
+  );
+};
 
 function Footer() {
   const [Email, setEmail] = useState("");
@@ -60,7 +61,7 @@ function Footer() {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (e.currentTarget.Email.value === "") {
-      console.log("Email is empty")
+      console.log("Email is empty");
       return;
     }
     const email = e.currentTarget.Email.value;
@@ -72,13 +73,17 @@ function Footer() {
       setTimeout(() => setShowEmailPopup(false), 2000);
       return;
     }
-    emailjs.sendForm('service_33u9zzp', 'demo', e.currentTarget, 'ZmHT-LEvyKBSsbp-t')
-      .then((result) => {
-        console.log(result.text);
-        setEmail("");
-      }, (error) => {
-        console.log(error.text);
-      });
+    emailjs
+      .sendForm("service_33u9zzp", "demo", e.currentTarget, "ZmHT-LEvyKBSsbp-t")
+      .then(
+        (result) => {
+          console.log(result.text);
+          setEmail("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   const [showPopup, setShowPopup] = useState(false);
@@ -161,7 +166,17 @@ function Footer() {
               InputProps={{
                 endAdornment: (
                   <InputAdornment position="end">
-                    <button type="submit" style={{ border: "none", background: "none", margin: 0, padding: 0, paddingTop: "4px", cursor: "pointer" }}>
+                    <button
+                      type="submit"
+                      style={{
+                        border: "none",
+                        background: "none",
+                        margin: 0,
+                        padding: 0,
+                        paddingTop: "4px",
+                        cursor: "pointer",
+                      }}
+                    >
                       <img
                         className="text-field-img"
                         src={RightArrowBlueBG}
@@ -183,12 +198,12 @@ function Footer() {
             />
           </form>
         </Box>
-        {showEmailPopup && (<Popup1 textToPop="Invalid Email Format"/>)}
+        {showEmailPopup && <Popup1 textToPop="Invalid Email Format" />}
         <Box
           className="footer-bottom-social-link-div"
           sx={{ display: { xs: "none", sm: "flex" } }}
         >
-          {showPopup && (<Popup1 textToPop="Copied to Clipboard"/>)}
+          {showPopup && <Popup1 textToPop="Copied to Clipboard" />}
           {/* <Link href="#" style={{ textDecoration: "none" }}>
             <p className="footer-social-links">Instagram</p>
           </Link> */}
@@ -196,71 +211,132 @@ function Footer() {
             <p className="footer-social-links">Youtube</p>
           </Link> */}
           <div onClick={() => handleCopy("+91 94688 39182")}>
-            <Box sx={{
-              display: 'flex',
-              alignItems: 'center'
-            }}>
-              <LocalPhoneIcon htmlColor="white" style={{ paddingRight: "3px", fontSize: "20px" }} />
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <LocalPhoneIcon
+                htmlColor="white"
+                style={{ paddingRight: "3px", fontSize: "20px" }}
+              />
               <p className="footer-social-links">+91 94688 39182</p>
             </Box>
           </div>
           <div onClick={() => handleCopy("support@gplan.in")}>
-            <Box sx={{
-              display: 'flex',
-              alignItems: 'center'
-            }}>
-              <MailIcon htmlColor="white" style={{ paddingRight: "3px", fontSize: "20px" }} />
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <MailIcon
+                htmlColor="white"
+                style={{ paddingRight: "3px", fontSize: "20px" }}
+              />
               <p className="footer-social-links">support@gplan.in</p>
             </Box>
           </div>
-          <Link href="https://www.linkedin.com/company/graphplan/" target="_blank" style={{ textDecoration: "none" }}>
-            <Box sx={{
-              display: 'flex',
-              alignItems: 'center'
-            }}>
-              <LinkedInIcon htmlColor="white" style={{ paddingRight: "3px", fontSize: "20px" }} />
+          <Link
+            href="https://www.linkedin.com/company/graphplan/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <LinkedInIcon
+                htmlColor="white"
+                style={{ paddingRight: "3px", fontSize: "20px" }}
+              />
               <p className="footer-social-links">LinkedIn</p>
             </Box>
           </Link>
-          <Link href="https://whatsapp.com/channel/0029VajTRLkEQIam6IHBek2W/" target="_blank" style={{ textDecoration: "none" }}>
-            <Box sx={{
-              display: 'flex',
-              alignItems: 'center'
-            }}>
-              <p className="footer-social-links" style={{ fontSize: "10px" }}>WhatsApp</p>
+          <Link
+            href="https://whatsapp.com/channel/0029VajTRLkEQIam6IHBek2W/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <WhatsApp
+                htmlColor="white"
+                style={{ paddingRight: "3px", fontSize: "20px" }}
+              />
+              <p className="footer-social-links">WhatsApp</p>
             </Box>
           </Link>
-        </Box>
         </Box>
         <Box
           className="footer-bottom-social-link-div"
           sx={{ display: { xs: "flex", sm: "none" } }}
         >
-          <div onClick={async () => { navigator.clipboard.writeText("+91 94688 39182") }}>
-            <Box sx={{
-              display: 'flex',
-              alignItems: 'center'
-            }}>
-              <LocalPhoneIcon htmlColor="white" style={{ paddingRight: "3px", fontSize: "20px" }} />
-              <p className="footer-social-links" style={{ fontSize: "10px" }}>+91 94688 39182</p>
+          <div
+            onClick={async () => {
+              navigator.clipboard.writeText("+91 94688 39182");
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <LocalPhoneIcon
+                htmlColor="white"
+                style={{ paddingRight: "3px", fontSize: "20px" }}
+              />
+              <p className="footer-social-links" style={{ fontSize: "10px" }}>
+                +91 94688 39182
+              </p>
             </Box>
           </div>
-          <div onClick={async () => { navigator.clipboard.writeText("support@gplan.in") }}>
-            <Box sx={{
-              display: 'flex',
-              alignItems: 'center'
-            }}>
-              <MailIcon htmlColor="white" style={{ paddingRight: "3px", fontSize: "20px" }} />
-              <p className="footer-social-links" style={{ fontSize: "10px" }}>support@gplan.in</p>
+          <div
+            onClick={async () => {
+              navigator.clipboard.writeText("support@gplan.in");
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <MailIcon
+                htmlColor="white"
+                style={{ paddingRight: "3px", fontSize: "20px" }}
+              />
+              <p className="footer-social-links" style={{ fontSize: "10px" }}>
+                support@gplan.in
+              </p>
             </Box>
           </div>
-          <Link href="https://www.linkedin.com/company/graphplan/" target="_blank" style={{ textDecoration: "none" }}>
-            <Box sx={{
-              display: 'flex',
-              alignItems: 'center'
-            }}>
-              <LinkedInIcon htmlColor="white" style={{ paddingRight: "3px", fontSize: "20px" }} />
-              <p className="footer-social-links" style={{ fontSize: "10px" }}>LinkedIn</p>
+          <Link
+            href="https://www.linkedin.com/company/graphplan/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <LinkedInIcon
+                htmlColor="white"
+                style={{ paddingRight: "3px", fontSize: "20px" }}
+              />
+              <p className="footer-social-links" style={{ fontSize: "10px" }}>
+                LinkedIn
+              </p>
             </Box>
           </Link>
         </Box>

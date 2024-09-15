@@ -1,4 +1,4 @@
-import { Box, Fade, Slide } from "@mui/material";
+import { Box, Fade, Slide, Link } from "@mui/material";
 import React from "react";
 import landingBG from "../../public/landingBG.png";
 import { useInView } from "react-intersection-observer";
@@ -106,11 +106,15 @@ function HeroSection() {
           <p className="mobile-hero-subtext">
             A Generative Floor Plan Designer
           </p>
-           <Link target='_blank' to="https://forms.gle/su6taEh4KNbjvbBW9" className='linkNav'>
-          <button className="mobile-hero-button">
-            Get Started <RightArrowLineIcon color="white" />
-          </button>
-             </Link>
+          {/* <Link
+            target="_blank"
+            to="https://forms.gle/su6taEh4KNbjvbBW9"
+            className="linkNav"
+          >
+            <button className="mobile-hero-button">
+              Get Started <RightArrowLineIcon color="white" />
+            </button>
+          </Link> */}
         </div>
       </Box>
     </>
