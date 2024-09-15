@@ -5,7 +5,6 @@ import { useInView } from "react-intersection-observer";
 import RightArrowLineIcon from "../icons/RightArrowLineIcon";
 import PhoneBGWave from "../icons/PhoneBGWave";
 
-
 function HeroSection() {
   const { ref: imageRef, inView: imageIsVisible } = useInView({
     triggerOnce: true,
@@ -15,7 +14,14 @@ function HeroSection() {
   const containerRefMobile = React.useRef<HTMLDivElement>(null);
 
   const handleGetStarted = () => {
-    //Redirect to desired page
+    //Redirect to pricing section in the same page
+    const pricingSection = document.getElementById("pricing");
+    if (pricingSection) {
+      window.scrollTo({
+        top: pricingSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (

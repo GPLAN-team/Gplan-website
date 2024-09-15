@@ -112,6 +112,9 @@ function Footer() {
           sx={{ display: { xs: "none", sm: "flex" } }}
         >
           <Link href="#" style={{ textDecoration: "none" }}>
+            <p className="footer-social-links">WhatsApp</p>
+          </Link>
+          <Link href="#" style={{ textDecoration: "none" }}>
             <p className="footer-social-links">Instagram</p>
           </Link>
           <Link href="#" style={{ textDecoration: "none" }}>

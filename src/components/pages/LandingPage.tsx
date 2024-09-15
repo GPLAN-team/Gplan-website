@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../utils/Navbar";
 import HeroSection from "../utils/HeroSection";
 import Footer from "../utils/Footer";
-import "../../styles/home.css"
+import "../../styles/home.css";
 import MacPhotoSection from "../utils/MacPhotoSection";
 import InfoSection from "../utils/InfoSection";
 import GetStarted from "../utils/GetStarted";
@@ -18,13 +18,13 @@ function LandingPage() {
       <Navbar />
       <HeroSection />
       <MacPhotoSection />
-      <InfoSection/>
+      <InfoSection />
       {/* <GetStarted/> */}
-      <Features/>
-      <Pricing/>
-      <DemoVideo/>
-      <GuidedVideos/>
-      <OurStory/>
+      <Features />
+      <Pricing />
+      <DemoVideo />
+      {/* <GuidedVideos/> */}
+      {/* <OurStory/> */}
       <Footer />
     </>
   );

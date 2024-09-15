@@ -4,8 +4,12 @@ import FeatureSVG from "../../public/features.svg";
 
 const Features = () => {
   return (
-    <>
-      <p className="pricing-main-heading" style={{ marginTop: "64px" }} id="features-section">
+    <section id="features">
+      <p
+        className="pricing-main-heading"
+        style={{ marginTop: "64px" }}
+        id="features-section"
+      >
         Features
       </p>
       <Grid
@@ -39,8 +43,9 @@ const Features = () => {
           <Box sx={{ display: { xs: "block", sm: "none" } }}>
             <p className="features-content" style={{ fontSize: "12px" }}>
               {" "}
-              Since it's based on mathematics,<br /> it is 100% scalable,
-               you can fit in as many rooms as you like,
+              Since it's based on mathematics,
+              <br /> it is 100% scalable, you can fit in as many rooms as you
+              like,
               <br /> each with its own dimensions.
             </p>
           </Box>
@@ -128,7 +133,7 @@ const Features = () => {
           </Box>
         </Grid>
       </Grid>
-    </>
+    </section>
   );
 };
 

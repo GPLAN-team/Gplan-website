@@ -63,7 +63,10 @@ const PricingCard = (props: {
         }}
       >
         <button
-          onClick={() => alert("Free plan")}
+          onClick={() => {
+            //Redirect to https://app.gplan.in/signup
+            window.location.href = "http://localhost:3000/signup";
+          }}
           className="pricing-footer-button"
         >
           Get Started
@@ -75,16 +78,22 @@ const PricingCard = (props: {
 
 const Pricing = () => {
   return (
-    <>
+    <section id="pricing">
       <Box sx={{ flexGrow: 1, padding: "24px" }}>
         <p className="pricing-main-heading">Plan and Pricing</p>
-        <Grid container spacing={3}>
+        {/* Make all the Items in this div evenly spaced */}
+        <Grid
+          container
+          spacing={3}
+          justifyContent="space-around"
+          alignItems="center"
+        >
           <Grid item xs={12} sm={3}>
             <PricingCard
-            key={0}
+              key={0}
               type="free"
-              heading="Free Trial"
-              price="Free"
+              heading="Free Trial for 15 days"
+              price="Free "
               features={[
                 "Basic features & functionalities",
                 "Upto 7 nodes/rooms",
@@ -97,10 +106,10 @@ const Pricing = () => {
           </Grid>
           <Grid item xs={12} sm={3}>
             <PricingCard
-            key={1}
+              key={1}
               type="basic"
-              heading="Basic Plan"
-              price="$35/mth"
+              heading="Student Plan"
+              price="$3/mth"
               features={[
                 "Upto 15 nodes/rooms",
                 "Unlimited Floor-plans",
@@ -113,10 +122,10 @@ const Pricing = () => {
           </Grid>
           <Grid item xs={12} sm={3}>
             <PricingCard
-            key={2}
+              key={2}
               type="pro"
               heading="Pro Plan"
-              price="$75/mth"
+              price="$5/mth"
               features={[
                 "Upto 30 nodes/rooms",
                 "L, T, U and Z shaped plans",
@@ -126,9 +135,9 @@ const Pricing = () => {
               ]}
             />
           </Grid>
-          <Grid item xs={12} sm={3}>
+          {/* <Grid item xs={12} sm={3}>
             <PricingCard
-            key={3}
+              key={3}
               type="enterprise"
               heading="Enterprise Plan"
               price="Custom"
@@ -140,10 +149,10 @@ const Pricing = () => {
                 "Large-scale production",
               ]}
             />
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
-    </>
+    </section>
   );
 };
 
