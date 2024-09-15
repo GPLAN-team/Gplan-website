@@ -295,6 +295,7 @@ function Footer() {
             <p className="footer-social-links">Terms and Conditions</p>
           </RouterLink>
         </Box>
+
         <Box
           className="footer-bottom-social-link-div"
           sx={{ display: { xs: "flex", sm: "none" } }}

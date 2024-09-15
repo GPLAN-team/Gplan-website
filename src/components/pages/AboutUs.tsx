@@ -421,6 +421,7 @@ Dimensioned Floorplans based on given Adjacencies, Automation in Construction, V
             text="Shekhawat K. (2017). A computer-generated plus-shaped arrangement and its architectural
 applications. Journal of Computational Design and Engineering 4(4): 318-329."
           /> */}
+
         </Grid>
       </Grid>
       <Grid
