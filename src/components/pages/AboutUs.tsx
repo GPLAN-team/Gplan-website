@@ -403,15 +403,25 @@ export default function AboutUs() {
           Floorplan Layouts. A few of them are as follows:
         </Typography>
         <Grid container spacing={3}>
-          {/* <BioCard text="Raveena, Shekhawat, K. (2023) A Theory of L-shaped Floor-plans, Theoretical Computer
-Science, 942: 57 – 92."  />
-          <BioCard text="Bisht, S., Shekhawat, K., Upasani, N., Jain, RN., Tiwaskar, RJ., Hebbar, C. (2022)
+          {/* add link with this param link="" */}
+          {/* <BioCard
+            text="Raveena, Shekhawat, K. (2023) A Theory of L-shaped Floor-plans, Theoretical Computer
+Science, 942: 57 – 92."
+          />
+          <BioCard
+            text="Bisht, S., Shekhawat, K., Upasani, N., Jain, RN., Tiwaskar, RJ., Hebbar, C. (2022)
 Transforming an Adjacency Graph into Dimensioned Floorplan Layouts, Computer Graphics
-Forum, 1-18."  />
-          <BioCard text="Shekhawat, K., Upasani, N., Bisht, S., Jain, RN. (2021) A Tool for Computer-Generated
-Dimensioned Floorplans based on given Adjacencies, Automation in Construction, Vol. 127."/>
-          <BioCard text="Shekhawat K. (2017). A computer-generated plus-shaped arrangement and its architectural
-applications. Journal of Computational Design and Engineering 4(4): 318-329." /> */}
+Forum, 1-18."
+          />
+          <BioCard
+            text="Shekhawat, K., Upasani, N., Bisht, S., Jain, RN. (2021) A Tool for Computer-Generated
+Dimensioned Floorplans based on given Adjacencies, Automation in Construction, Vol. 127."
+          />
+          <BioCard
+            text="Shekhawat K. (2017). A computer-generated plus-shaped arrangement and its architectural
+applications. Journal of Computational Design and Engineering 4(4): 318-329."
+          /> */}
+
         </Grid>
       </Grid>
       <Grid

@@ -1,9 +1,9 @@
 import {
   Box,
   InputAdornment,
-  Link,
   TextField,
   Typography,
+  Link,
 } from "@mui/material";
 import React, { useState } from "react";
 import GplanIconWhite from "../icons/GplanIconWhite";
@@ -13,6 +13,8 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MailIcon from "@mui/icons-material/Mail";
 import emailjs from "@emailjs/browser";
 import { WhatsApp } from "@mui/icons-material";
+//import Link as RouterLink
+import { Link as RouterLink } from "react-router-dom";
 
 interface Popup1Props {
   textToPop: string;
@@ -201,7 +203,7 @@ function Footer() {
         {showEmailPopup && <Popup1 textToPop="Invalid Email Format" />}
         <Box
           className="footer-bottom-social-link-div"
-          sx={{ display: { xs: "none", sm: "flex" } }}
+          sx={{ display: { xs: "none", sm: "flex", marginTop: "15px" } }}
         >
           {showPopup && <Popup1 textToPop="Copied to Clipboard" />}
           {/* <Link href="#" style={{ textDecoration: "none" }}>
@@ -275,6 +277,25 @@ function Footer() {
             </Box>
           </Link>
         </Box>
+        <Box
+          className="footer-bottom-social-link-div"
+          sx={{
+            display: {
+              xs: "none",
+              sm: "flex",
+              margin: "0",
+              marginBottom: "15px",
+            },
+          }}
+        >
+          <RouterLink to="/policy" style={{ textDecoration: "none" }}>
+            <p className="footer-social-links">Privacy Policy </p>
+          </RouterLink>
+          <RouterLink to="/terms" style={{ textDecoration: "none" }}>
+            <p className="footer-social-links">Terms and Conditions</p>
+          </RouterLink>
+        </Box>
+
         <Box
           className="footer-bottom-social-link-div"
           sx={{ display: { xs: "flex", sm: "none" } }}
