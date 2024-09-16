@@ -420,7 +420,72 @@ export default function Policy() {
           the terms of this Policy, you are not authorized to access or use the
           Website and Services.
         </p>
-        <h2>20. CONTACTING US</h2>
+        <h2>20. Collection of Personal Information during Cancellation</h2>
+        <p>
+          When you submit a cancellation request via support@gplan.in, we may
+          collect additional information to verify your identity and process the
+          request. This information typically includes your name, account
+          details, and email address. We collect this information to protect
+          against fraudulent requests and to ensure that only authorized users
+          can cancel their accounts.
+        </p>
+        <h2>21. Processing of Personal Information</h2>
+        <p>
+          The personal information provided for the cancellation will only be
+          used to process your request and will not be shared with any third
+          parties unless required by law. We may store a record of your
+          cancellation request, including the date and time of the request, for
+          internal auditing, legal, and operational purposes.
+        </p>
+        <h2>22. Data Retention Post-Cancellation</h2>
+        <p>
+          Upon successful cancellation of your account, your personal data will
+          be retained only as long as necessary to comply with legal and
+          regulatory obligations or for legitimate business purposes, such as
+          dispute resolution, compliance with applicable laws, and maintaining
+          records of transactions and communications.
+        </p>
+        <h2>23. Right to Erasure</h2>
+        <p>
+          Users may request the permanent deletion of their personal data by
+          contacting us at support@gplan.in after account cancellation. Please
+          note that some data may be retained as required by law or for
+          legitimate business purposes.
+        </p>
+        <h2>24. Security of Information</h2>
+        <p>
+          We take the security of your personal data seriously. Any data
+          collected during the account cancellation process is stored securely
+          and in compliance with relevant data protection regulations, including
+          encryption and access control measures to prevent unauthorized access,
+          alteration, or disclosure.
+        </p>
+        <h2>25. Collection of Personal Information during Refund Request</h2>
+        <p>
+          When you submit a refund request, we may collect personal information
+          to verify your identity and process the request. This information
+          typically includes your name, email address, payment details, and
+          account information. We collect this information to ensure that the
+          refund request is legitimate and that only authorized users can
+          initiate such requests.
+        </p>
+        <h2>26. Processing of Personal Information</h2>
+        <p>
+          The personal information provided during the refund process will only
+          be used for processing your request and verifying your eligibility for
+          the refund. We do not share your personal information with any third
+          parties unless required by law. Your payment details will be handled
+          securely, in compliance with applicable payment and data protection
+          regulations.
+        </p>
+        <h2>27. Data Retention Post-Refund</h2>
+        <p>
+          After processing your refund, we will retain the personal information
+          related to your request for as long as necessary to comply with legal,
+          regulatory, and operational obligations. This includes maintaining
+          records for accounting, auditing, and dispute resolution purposes.
+        </p>
+        <h2>28. CONTACTING US</h2>
         <p>
           If you would like to contact us to understand more about this Policy
           or wish to contact us concerning any matter relating to individual

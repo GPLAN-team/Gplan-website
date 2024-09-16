@@ -95,12 +95,13 @@ const Pricing = () => {
               heading="Free Trial for 15 days"
               price="Free "
               features={[
-                "Basic features & functionalities",
-                "Upto 7 nodes/rooms",
-                "Upto 5 Floor-Plans",
-                "Rectangular shaped plans",
-                "Corridors/Passage",
-                "Non-dimensional only",
+                "Upto 15 nodes/rooms",
+                "Unlimited Floorplans",
+                "Dimensionless floorplans for any adjacency",
+                "Rectangular floorplans",
+                "Dimensioned floorplans",
+                "Editing a floorplan by wall movements",
+                "Exporting floorplans as json and dxf",
               ]}
             />
           </Grid>
@@ -112,11 +113,12 @@ const Pricing = () => {
               price="$3/mth"
               features={[
                 "Upto 15 nodes/rooms",
-                "Unlimited Floor-plans",
-                "Rectangular shaped plans",
-                "Corridors/Passage",
-                "Dimensional",
-                "Basic customization options",
+                "Unlimited Floorplans",
+                "Dimensionless floorplans for any adjacency",
+                "Rectangular floorplans",
+                "Dimensioned floorplans",
+                "Editing a floorplan by wall movements",
+                "Exporting floorplans as json and dxf",
               ]}
             />
           </Grid>
@@ -127,11 +129,13 @@ const Pricing = () => {
               heading="Pro Plan"
               price="$5/mth"
               features={[
-                "Upto 30 nodes/rooms",
-                "L, T, U and Z shaped plans",
-                "Staircase shaped plans",
-                "Custom shape of plots",
-                "Customisation of Corridors",
+                "Upto 15 nodes/rooms",
+                "Unlimited Floorplans",
+                "Dimensionless floorplans for any adjacency",
+                "Rectangular floorplans",
+                "Dimensioned floorplans",
+                "Editing a floorplan by wall movements",
+                "Exporting floorplans as json and dxf",
               ]}
             />
           </Grid>

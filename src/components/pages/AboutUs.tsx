@@ -162,6 +162,7 @@ export default function AboutUs() {
             fontWeight: 400,
             lineHeight: "normal",
             mr: "10px",
+            color: "#1c4c82",
           }}
         >
           GPLAN
@@ -170,7 +171,7 @@ export default function AboutUs() {
           sx={{
             textAlign: "left",
             fontFamily: "Bebas Neue",
-            color: "#828282",
+            color: "#1c4c82",
             fontSize: { xs: "25px", sm: "40px" },
             fontStyle: "normal",
             fontWeight: 400,
@@ -293,8 +294,8 @@ export default function AboutUs() {
           }}
         >
           <Grid container>
-            <Box sx={{ color: "black", marginRight: "4px" }}>Our</Box>
-            <Box sx={{ color: "black" }}>Story</Box>
+            <Box sx={{ color: "#1c4c82", marginRight: "4px" }}>Our</Box>
+            <Box sx={{ color: "#1c4c82" }}>Story</Box>
           </Grid>
         </Typography>
         <Typography
@@ -375,7 +376,7 @@ export default function AboutUs() {
         >
           <Grid container>
             {/* <Box sx={{ color: "black", marginRight: "4px" }}>Our</Box> */}
-            <Box sx={{ color: "black" }}>Our Founder</Box>
+            <Box sx={{ color: "#1c4c82" }}>Our Founder</Box>
           </Grid>
         </Typography>
         <Typography
@@ -421,7 +422,6 @@ Dimensioned Floorplans based on given Adjacencies, Automation in Construction, V
             text="Shekhawat K. (2017). A computer-generated plus-shaped arrangement and its architectural
 applications. Journal of Computational Design and Engineering 4(4): 318-329."
           /> */}
-
         </Grid>
       </Grid>
       <Grid
@@ -447,8 +447,8 @@ applications. Journal of Computational Design and Engineering 4(4): 318-329."
           }}
         >
           <Grid container>
-            <Box sx={{ color: "black", marginRight: "4px" }}>Our</Box>
-            <Box sx={{ color: { xs: "#1C4C82", sm: "black" } }}>Team</Box>
+            <Box sx={{ color: "#1c4c82", marginRight: "4px" }}>Our</Box>
+            <Box sx={{ color: "#1c4c82" }}>Team</Box>
           </Grid>
         </Typography>
         <Grid container spacing={4}>

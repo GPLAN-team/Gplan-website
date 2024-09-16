@@ -260,67 +260,6 @@ export default function Terms() {
           Gplan assumes no liability for the actions of its users or the content
           they may post or communicate.
         </p>
-        <h2>9. THE RIGHT TO OBJECT TO PROCESSING</h2>
-        <p>
-          Where Personal Information is processed for the public interest, in
-          the exercise of an official authority vested in us or for the purposes
-          of the legitimate interests pursued by us, you may object to such
-          processing by providing a ground related to your particular situation
-          to justify the objection.
-        </p>
-        <h2>10. DATA PROTECTION RIGHTS UNDER GDPR</h2>
-        <p>
-          If you are a resident of the European Economic Area (EEA), you have
-          certain data protection rights and the Operator aims to take
-          reasonable steps to allow you to correct, amend, delete, or limit the
-          use of your Personal Information. If you wish to be informed what
-          Personal Information we hold about you and if you want it to be
-          removed from our systems, please contact us. In certain circumstances,
-          you have the following data protection rights:
-        </p>
-        <ul>
-          <li>
-            You have the right to request access to your Personal Information
-            that we store and have the ability to access your Personal
-            Information.
-          </li>
-          <li>
-            You have the right to request that we correct any Personal
-            Information you believe is inaccurate. You also have the right to
-            request us to complete the Personal Information you believe is
-            incomplete.
-          </li>
-          <li>
-            You have the right to request the erase your Personal Information
-            under certain conditions of this Policy.
-          </li>
-          <li>
-            You have the right to object to our processing of your Personal
-            Information.
-          </li>
-          <li>
-            You have the right to seek restrictions on the processing of your
-            Personal Information. When you restrict the processing of your
-            Personal Information, we may store it but will not process it
-            further.
-          </li>
-          <li>
-            You have the right to be provided with a copy of the information we
-            have on you in a structured, machine-readable and commonly used
-            format.
-          </li>
-          <li>
-            You also have the right to withdraw your consent at any time where
-            the Operator relied on your consent to process your Personal
-            Information.
-          </li>
-          <li>
-            You have the right to complain to a Data Protection Authority about
-            our collection and use of your Personal Information. For more
-            information, please contact your local data protection authority in
-            the European Economic Area (EEA).
-          </li>
-        </ul>
         <h2>PRIVACY</h2>
         <p>
           In order to enhance the quality of the Services and Software and to
@@ -433,7 +372,7 @@ export default function Terms() {
         </p>
         <h2>NOTICES</h2>
         <p>
-          Notices to Gplan shall be sent via email to{" "}
+          Notices to Gplan shall be sent via email to
           <a href="mailto:support@gplan.in"> support@gplan.com</a>. Notices to
           you shall be sent via email to the email address you provide and
           maintain in your User Account.
@@ -461,14 +400,94 @@ export default function Terms() {
         <h2>GOVERNING LAW</h2>
         <p>
           These Terms of Use shall be governed by and construed in accordance
-          with the laws of Sweden. The parties shall in good faith try to
-          resolve any disagreement or dispute under these Terms of Use through
+          with the laws of India. The parties shall in good faith try to resolve
+          any disagreement or dispute under these Terms of Use through
           negotiations. If the parties after such negotiations are not able to
           reach an amicable solution, the dispute may be brought before the
-          ordinary courts, with Malmö City Court as legal venue. These Terms
-          will not limit any consumer protection rights that the Authorized User
-          may be entitled to under the mandatory laws of its country of
-          residence.
+          ordinary courts. These Terms will not limit any consumer protection
+          rights that the Authorized User may be entitled to under the mandatory
+          laws of its country of residence.
+        </p>
+        <h2>Cancellation of Subscription</h2>
+        <p>
+          Users who wish to cancel their subscription must submit a formal
+          request via email to our support team at support@gplan.in. This
+          request must be received at least 10 days in advance of the next
+          billing cycle to ensure timely processing. Failure to comply with this
+          time frame may result in continued service and billing for the
+          upcoming period.
+        </p>
+        <h2>Processing of Cancellation Requests</h2>
+        <p>
+          Upon receiving your cancellation request, our support team will verify
+          the request and confirm cancellation within a maximum of 3 business
+          days. The account will remain active until the end of the current
+          billing cycle, after which the subscription will be terminated. You
+          will continue to have access to your account and services during this
+          period, and no refunds will be issued for any remaining time on the
+          subscription.
+        </p>
+        <h2>Reactivation of Account</h2>
+        <p>
+          If users wish to reactivate their account after cancellation, a new
+          subscription will need to be purchased, and previous data or settings
+          may not be recoverable. Any unpaid dues or outstanding charges must be
+          cleared before reactivating the account.
+        </p>
+        <h2>Billing and Termination</h2>
+        <p>
+          If the cancellation request is not submitted at least 10 days in
+          advance, you may be charged for the subsequent billing cycle. After
+          the cancellation is processed, the account will be deactivated, and
+          access to the platform and associated services will be revoked. Users
+          are responsible for ensuring the accuracy and timeliness of their
+          cancellation request.
+        </p>
+        <h2>Eligibility for Refund</h2>
+        <p>
+          If you are an individual user and are dissatisfied with our Service,
+          you are eligible for a full refund provided that you submit a written
+          notice via email to{" "}
+          <a href="mailto:support@gplan.in">support@gplan.in </a> within 10 days
+          of your payment. This refund applies only to the specific transaction
+          in question. Refund requests submitted after the 10-day period will
+          not be honored, and you will have no right to a refund for that
+          payment.
+        </p>
+        <h2>Refund Request Process</h2>
+        <p>
+          Refund requests must be sent to{" "}
+          <a href="mailto:support@gplan.in">support@gplan.in</a> with a detailed
+          explanation of why you are requesting the refund. Upon receiving your
+          written notice, our support team will acknowledge the request and
+          initiate the refund process. We reserve the right to review and
+          validate the request before processing the refund. If approved, the
+          refund will be issued within 7 business days from the date of
+          approval.
+        </p>
+        <h2>Non-Refundable Services</h2>
+        <p>
+          Any requests for refunds made after the 10-day window will be
+          automatically denied. Additionally, if you have already consumed a
+          substantial portion of the service or violated the Terms of Service,
+          we reserve the right to deny your refund request. Refunds will not be
+          issued for any partially consumed services, add-ons, or optional
+          features beyond the core subscription.
+        </p>
+        <h2>Refund Method</h2>
+        <p>
+          Refunds will be processed using the same method of payment originally
+          used for the transaction. Depending on your payment provider, it may
+          take 5-10 business days for the refunded amount to appear in your
+          account. We are not responsible for any delays caused by third-party
+          payment processors or banks.
+        </p>
+        <h2>Effect of Cancellation</h2>
+        <p>
+          If you request a refund within the 10-day window and it is approved,
+          your account will be cancelled, and access to the Service will be
+          revoked. You will no longer be able to use any features of the Service
+          once the refund has been processed.
         </p>
         <p>This document was last updated on September 15, 2024</p>
       </Grid>

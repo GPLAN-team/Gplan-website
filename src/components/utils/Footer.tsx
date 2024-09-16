@@ -12,7 +12,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MailIcon from "@mui/icons-material/Mail";
 import emailjs from "@emailjs/browser";
-import { WhatsApp } from "@mui/icons-material";
+import { PinDrop, WhatsApp, YouTube } from "@mui/icons-material";
 //import Link as RouterLink
 import { Link as RouterLink } from "react-router-dom";
 
@@ -241,6 +241,24 @@ function Footer() {
             </Box>
           </div>
           <Link
+            href="https://www.youtube.com/@GPLAN2024/videos"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <YouTube
+                htmlColor="white"
+                style={{ paddingRight: "3px", fontSize: "20px" }}
+              />
+              <p className="footer-social-links">Youtube</p>
+            </Box>
+          </Link>
+          <Link
             href="https://www.linkedin.com/company/graphplan/"
             target="_blank"
             style={{ textDecoration: "none" }}
@@ -274,6 +292,23 @@ function Footer() {
                 style={{ paddingRight: "3px", fontSize: "20px" }}
               />
               <p className="footer-social-links">WhatsApp</p>
+            </Box>
+          </Link>
+          <Link href="" style={{ textDecoration: "none" }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <PinDrop
+                htmlColor="white"
+                style={{ paddingRight: "3px", fontSize: "20px" }}
+              />
+              <p className="footer-social-links">
+                Gplan Services Private Limited, P33 Shriram Colony, Pilani,
+                Jhunjhunu - 333031, Rajasthan
+              </p>
             </Box>
           </Link>
         </Box>
