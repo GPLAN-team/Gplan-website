@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.3526bae4.css",
-    "main.js": "/static/js/main.dbd8d3d4.js",
+    "main.js": "/static/js/main.bdde254c.js",
     "static/js/453.f6925dd0.chunk.js": "/static/js/453.f6925dd0.chunk.js",
+    "static/media/Final_1.mp4": "/static/media/Final_1.fd97bef82c765f8d8d3c.mp4",
     "static/media/loginBG.png": "/static/media/loginBG.b04631a75e98cc969d19.png",
+    "static/media/userManual.pdf": "/static/media/userManual.97886cff955185377c83.pdf",
     "static/media/landingBG.png": "/static/media/landingBG.ff70568439c40c48e062.png",
     "static/media/algoBG.png": "/static/media/algoBG.3f5447007f86f4e03189.png",
-    "static/media/algoPlaceH.png": "/static/media/algoPlaceH.1f8acd5ba21899c9c480.png",
     "static/media/upper-macbook.svg": "/static/media/upper-macbook.b9fcb1d6cccca1385a06d745b93f3b4a.svg",
     "static/media/mac.png": "/static/media/mac.e4df63481481805efd7f.png",
-    "static/media/algoPlaceHM.png": "/static/media/algoPlaceHM.6d0e492d85b9ac70d7ce.png",
+    "static/media/faq.pdf": "/static/media/faq.11a945374b1ecfca74de.pdf",
     "static/media/lower-macbook.svg": "/static/media/lower-macbook.27d08dd9a9e4b738f650544cbfc7a39e.svg",
     "static/media/mac_node.png": "/static/media/mac_node.898b905264bbcb30084c.png",
     "static/media/bgL1.png": "/static/media/bgL1.1b0202b06d6046bf3cae.png",
@@ -24,11 +25,11 @@
     "static/media/lower-bg-wave.svg": "/static/media/lower-bg-wave.9a6cbf23b292aa479fb11f5a33a5e3c9.svg",
     "static/media/upper-bg-wave.svg": "/static/media/upper-bg-wave.45759ca0d288e4698eb308e97ee2636c.svg",
     "main.3526bae4.css.map": "/static/css/main.3526bae4.css.map",
-    "main.dbd8d3d4.js.map": "/static/js/main.dbd8d3d4.js.map",
+    "main.bdde254c.js.map": "/static/js/main.bdde254c.js.map",
     "453.f6925dd0.chunk.js.map": "/static/js/453.f6925dd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3526bae4.css",
-    "static/js/main.dbd8d3d4.js"
+    "static/js/main.bdde254c.js"
   ]
 }
