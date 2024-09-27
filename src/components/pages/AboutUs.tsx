@@ -401,7 +401,7 @@ export default function AboutUs() {
           appointed as Scientific Advisor to Digital Blue Foam, Singapore. He
           has published many research papers in the field of Computer-aided
           Architectural Design, mainly focusing on Automated Generation of
-          Floorplan Layouts. A few of them are as follows:
+          Floorplan Layouts.
         </Typography>
         <Grid container spacing={3}>
           {/* add link with this param link="" */}
