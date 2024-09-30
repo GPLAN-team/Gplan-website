@@ -161,30 +161,7 @@ const Pricing = () => {
           <p style={{ color: "red", textAlign: "center" }}>{fetchError}</p>
         )}
         {/* Make all the Items in this div evenly spaced */}
-        <Grid
-          container
-          spacing={3}
-          justifyContent="space-around"
-          alignItems="center"
-        >
-          <Grid item xs={12} sm={3}>
-            <PricingCard
-              key={0}
-              type="free"
-              heading="Free Trial for 15 days"
-              price="Free"
-              features={[
-                "Upto 15 nodes/rooms",
-                "Unlimited Floorplans",
-                "Dimensionless floorplans for any adjacency",
-                "Rectangular floorplans",
-                "Dimensioned floorplans",
-                "Editing a floorplan by wall movements",
-                "Exporting floorplans as json and dxf",
-              ]}
-              usdToInrRate={usdToInrRate || undefined}
-            />
-          </Grid>
+        <Grid container spacing={3} justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={3}>
             <PricingCard
               key={1}
@@ -192,6 +169,7 @@ const Pricing = () => {
               heading="Student Plan"
               price="$3/mth"
               features={[
+                "First 15 days Free",
                 "Upto 15 nodes/rooms",
                 "Unlimited Floorplans",
                 "Dimensionless floorplans for any adjacency",
@@ -210,6 +188,7 @@ const Pricing = () => {
               heading="Pro Plan"
               price="$5/mth"
               features={[
+                "First 15 days Free",
                 "Upto 15 nodes/rooms",
                 "Unlimited Floorplans",
                 "Dimensionless floorplans for any adjacency",
