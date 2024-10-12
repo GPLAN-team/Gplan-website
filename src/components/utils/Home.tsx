@@ -13,6 +13,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "../pages/LandingPage";
 import AboutUs from "../pages/AboutUs";
 import Policy from "./Policy";
+import AppPolicy from "./AppPolicy";
 import Terms from "./Terms";
 
 function Home() {
@@ -26,6 +27,7 @@ function Home() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/policy" element={<Policy />} />
+          <Route path="/app-policy" element={<AppPolicy />} />
         </Routes>
       </Router>
       {/* <Navbar/>
