@@ -1,10 +1,9 @@
-import { Box, Fade, Slide } from "@mui/material"
+import { Box, Fade, Slide, Link } from "@mui/material"
 import React from "react"
 import landingBG from "../../public/landingBG.png"
 import { useInView } from "react-intersection-observer"
 import RightArrowLineIcon from "../icons/RightArrowLineIcon"
 import PhoneBGWave from "../icons/PhoneBGWave"
-import { Link } from "react-router-dom"
 
 function HeroSection() {
   const { ref: imageRef, inView: imageIsVisible } = useInView({
@@ -15,7 +14,14 @@ function HeroSection() {
   const containerRefMobile = React.useRef<HTMLDivElement>(null)
 
   const handleGetStarted = () => {
-    //Redirect to desired page
+    //Redirect to pricing section in the same page
+    const pricingSection = document.getElementById("pricing")
+    if (pricingSection) {
+      window.scrollTo({
+        top: pricingSection.offsetTop,
+        behavior: "smooth",
+      })
+    }
   }
 
   return (
@@ -100,15 +106,15 @@ function HeroSection() {
           <p className='mobile-hero-subtext'>
             A Generative Floor Plan Designer
           </p>
-          <Link
-            target='_blank'
-            to='https://forms.gle/su6taEh4KNbjvbBW9'
-            className='linkNav'
+          {/* <Link
+            target="_blank"
+            to="https://forms.gle/su6taEh4KNbjvbBW9"
+            className="linkNav"
           >
-            <button className='mobile-hero-button'>
-              Get Started <RightArrowLineIcon color='white' />
+            <button className="mobile-hero-button">
+              Get Started <RightArrowLineIcon color="white" />
             </button>
-          </Link>
+          </Link> */}
         </div>
       </Box>
     </>
